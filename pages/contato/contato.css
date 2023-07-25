@@ -1,0 +1,65 @@
+.btn.btn-outline-purple {
+  color: var(--dark);
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 60px, right 60px;
+}
+
+section.contato .card {
+  padding: 10px 80px;
+  background: #D9D9D9;
+}
+
+section.contato .card p {
+  color: var(--dark);
+}
+
+section.cliente {
+  background-image: url("../../images/bg-contact-left.png"), url("../../images/bg-contact-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right 300px;
+}
+
+section.cliente .card .tamanho {
+  width: 100%;
+  max-width: 265px;
+  margin: auto;
+}
+
+section.cliente .card {
+  padding: 120px 0;
+}
+
+section.cliente .card.two {
+  padding: 86px 0;
+}
+
+/* Media */
+@media (max-width: 1300px) {
+  section.cliente .card {
+    padding: 105px 0;
+  }
+  section.cliente .card.two {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 450px) {
+  section.contato {
+    background-image: none;
+  }
+  section.contato .card {
+    padding: 10px;
+  }
+  section.contato .card img {
+    width: 100%;
+  }
+  section.cliente .card {
+    padding: 30px;
+  }
+  section.cliente .card.two {
+    padding: 30px;
+  }
+}

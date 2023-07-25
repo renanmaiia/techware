@@ -1,0 +1,200 @@
+section.banner {
+  background-image: url("../../images/bg-sobre-left.png"), url("../../images/bg-sobre-right.png");
+  background-repeat: no-repeat;
+  background-position: left 50px, right 50px;
+}
+
+section.banner .card {
+  max-width: 560px;
+  padding: 50px;
+}
+
+section.banner .card.x2 {
+  max-width: 560px;
+  padding: 50px;
+}
+
+section.banner .card h3 {
+  font-size: 20px;
+  color: var(--secundary);
+}
+
+section.hrtech {
+  background-image: url("../../images/bg-sobre-left2.png"), url("../../images/bg-sobre-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.hrtech .card {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+section.hrtech .card.limit {
+  max-width: 660px;
+}
+
+section.hrtech h4 {
+  padding: 0 150px;
+  color: var(--secundary);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.line .card.borde {
+  background: transparent;
+  padding: 100px;
+  border-radius: 0 40px 40px 0;
+  border: 2px solid rgba(155, 155, 155, 0.3);
+}
+
+section.line .card {
+  padding: 60px;
+  border-radius: 0 40px 40px 0;
+  cursor: grab;
+  transition: all 0.3s;
+}
+
+section.line .card:hover {
+  box-shadow: 0 0 0 2px rgba(196, 71, 166, 0.1);
+  transition: all 0.3s;
+}
+
+section.line .card:active {
+  cursor: grabbing;
+}
+
+section.line .line-time .card.temp {
+  padding: 124px 55px;
+  border-radius: 40px;
+}
+
+.line-time {
+  display: flex;
+  overflow-x: auto;
+}
+
+.line-time::-webkit-scrollbar {
+  display: none;
+}
+
+.line-time > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+section.simulador {
+  background-image: url("../../images/bg-sobre3.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size:  auto;
+}
+
+section.simulador h2 {
+  color: var(--white);
+}
+
+section.simulador h3 {
+  font-size: 64px;
+  font-weight: 100;
+  color: var(--white);
+}
+
+section.simulador .card {
+  padding: 80px;
+}
+
+section.simulador .card.purple {
+  padding: 80px;
+  border-radius: 0 40px 40px 0;
+  background: var(--bg-roxo);
+}
+
+section.simulador img {
+  margin-left: -180px;
+  position: absolute;
+}
+
+section.numeros .card {
+  padding: 30px 60px;
+  transition: all 0.3s;
+}
+
+section.numeros .card:hover {
+  box-shadow: 0 0 0 4px rgba(155, 0, 119, 0.2);
+  transition: all 0.3s;
+}
+
+section.numeros .card h2 {
+  color: var(--purple);
+}
+
+section.clientes {
+  background-color: var(--white);
+}
+
+section.clientes .altura {
+  padding: 70px 0;
+}
+
+section.clientes .card.bg {
+  border: 1px solid var(--purple);
+}
+
+section.clientes .card-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.clientes .owl-carousel .owl-item img {
+  width: auto;
+  margin: auto;
+}
+
+/* Media */
+@media (max-width: 1300px) {
+  section.simulador img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  section.simulador img {
+    display: none
+  }
+  section.hrtech {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  section.hrtech h4 {
+    padding: 0;
+  }
+}
+@media (max-width: 450px) {
+  section.banner {
+    background-image: none;
+  }
+  section.simulador .card {
+    padding: 30px;
+  }
+  section.clientes .altura {
+    padding: 30px 0;
+  }
+  section.simulador {
+    background-image: none;
+  }
+  section.simulador .card.purple {
+    padding: 30px;
+  }
+  section.simulador h3 {
+    font-size: 50px;
+  }
+  section.line .card.borde {
+    padding: 20px;
+  }
+  section.line .line-time .card.temp {
+    padding: 20px;
+    border-radius: 0;
+  }
+}

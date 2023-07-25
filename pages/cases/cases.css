@@ -1,0 +1,137 @@
+section.banner {
+  background-image: url("../../images/bg-cases-home-left.png"), url("../../images/bg-cases-home-right.png");
+  background-color: #F1F1F1;
+  background-repeat: no-repeat;
+  background-position: left 50px, right 50px;
+}
+
+section.banner .card {
+  max-width: 400px;
+  padding: 40px 50px;
+  margin-top: 125px;
+}
+
+section.banner .card.x2 {
+  padding: 20px;
+  margin-top: 25px;
+}
+
+section.banner .card h3 {
+  font-size: 20px;
+  color: var(--secundary);
+}
+
+section.clientes {
+  background-image: url("../../images/bg-cases-left.png"), url("../../images/bg-cases-right.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.clientes .card {
+  background-color: var(--gray);
+  padding: 53px 80px;
+  margin-left: 10px;
+}
+
+section.clientes .card.x1 {
+  padding: 28px 150px;
+}
+
+section.clientes .owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+  margin: auto;
+}
+
+section.cards .card-hover {
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 70px;
+  transition: all 0.3s;
+}
+section.cards .card-hover:hover {
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(109, 0, 83, 0.2);
+  transition: all 0.3s;
+  margin-top:-5px;
+  margin-bottom:5px;
+}
+
+section.cards .card-hover p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.cards .card-hover h5 {
+  color: var(--purple);
+  font-size: 16px;
+}
+
+section.premios {
+  background-color: var(--white);
+}
+
+section.premios .card.bg {
+  border: 1px solid #BDBDBD;
+}
+
+section.premios .altura {
+  padding: 100px 0;
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 160px, right 160px;
+}
+
+section.contato .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.contato .card p {
+  color: var(--dark);
+}
+
+/* Media */
+@media (max-width: 992px) {
+  section.banner .card {
+    max-width: 100%;
+    padding: 40px;
+    margin-top: 30px;
+  }
+  section.clientes {
+    background-image: none;
+  }
+}
+@media (max-width: 450px) {
+  section.simulador .card {
+    padding: 30px;
+  }
+  section.clientes .altura {
+    padding: 30px 0;
+  }
+  section.cards .card-hover {
+    padding: 30px;
+  }
+  section.clientes .card {
+    padding: 20px;
+    margin-left: 0;
+  }
+  section.clientes .card.x1 {
+    padding: 28px;
+  }
+  section.premios .altura {
+    padding: 20px;
+  }
+  section.contato {
+    background-image: none;
+  }
+  section.contato .card {
+    padding: 10px;
+  }
+  section.contato .card img {
+    width: 100%;
+  }
+}

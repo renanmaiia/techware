@@ -1,0 +1,314 @@
+section.banner {
+  background-image: url("../../images/bg-left-rhevolution.png"), url("../../images/bg-right-rhevolution.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.banner .card {
+  max-width: 306px;
+  padding: 40px 20px;
+}
+
+section.banner .card h1 {
+  font-size: 40px;
+  color: var(--secundary);
+  font-weight: normal;
+}
+
+section.banner .x2 p {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+section.suite {
+  background-color: var(--white);
+}
+
+section.suite .card {
+  background-color: #F6F6F6;
+  padding: 70px 30px;
+}
+
+section.suite a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  min-width: 135px;
+  height: 100px;
+  text-align: center;
+  border-radius: 40px 0 40px 0;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 12px;
+  transition: all 0.3s;
+}
+
+section.suite a:hover {
+  text-decoration: none;
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+
+section.suite a.active {
+  text-decoration: none;
+  color: var(--white) !important;
+  transition: all 0.3s;
+}
+
+section.suite a span {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 44px;
+}
+
+/* Roxo */
+section.suite a.roxo {
+  color: var(--purple);
+}
+
+section.suite a.roxo:hover {
+  background: linear-gradient(90deg, #9B0077 0%, #FF00C5 100%);
+}
+
+section.suite a.roxo.active {
+  background: linear-gradient(90deg, #9B0077 0%, #FF00C5 100%);
+}
+
+/* Azul */
+section.suite a.azul {
+  color: #6787C3;
+}
+
+section.suite a.azul:hover {
+  background: linear-gradient(90deg, #9B0077 0%, #59ABDF 100%);
+}
+
+section.suite a.azul.active {
+  background: linear-gradient(90deg, #9B0077 0%, #59ABDF 100%);
+}
+
+/* Laranja */
+section.suite a.laranja {
+  color: #DC7C67;
+}
+
+section.suite a.laranja:hover {
+  background: linear-gradient(90deg, #9B0077 0%, #F9A31B 100%);
+}
+
+section.suite a.laranja.active {
+  background: linear-gradient(90deg, #9B0077 0%, #F9A31B 100%);
+}
+
+/* Amarelo */
+section.suite a.amarelo {
+  color: #D99F29;
+}
+
+section.suite a.amarelo:hover {
+  background: linear-gradient(90deg, #A5B463 0%, #F0960F 100%);
+}
+
+section.suite a.amarelo.active {
+  background: linear-gradient(90deg, #A5B463 0%, #F0960F 100%);
+}
+
+/* Verde Musgo */
+section.suite a.verde-musgo {
+  color: #92AE91;
+}
+
+section.suite a.verde-musgo:hover {
+  background: linear-gradient(90deg, #00ADC9 0%, #A5B463 100%);
+}
+
+section.suite a.verde-musgo.active {
+  background: linear-gradient(90deg, #00ADC9 0%, #A5B463 100%);
+}
+
+/* Verde */
+section.suite a.verde {
+  color: #50B88F;
+}
+
+section.suite a.verde:hover {
+  background: linear-gradient(90deg, #EF9224 0%, #50B88F 100%);
+}
+
+section.suite a.verde.active {
+  background: linear-gradient(90deg, #EF9224 0%, #50B88F 100%);
+}
+
+/* Vermelho */
+section.suite a.vermelho {
+  color: #B2414B;
+}
+
+section.suite a.vermelho:hover {
+  background: linear-gradient(90deg, #45A3DD 0%, #CA2B2B 100%);
+}
+
+section.suite a.vermelho.active {
+  background: linear-gradient(90deg, #45A3DD 0%, #CA2B2B 100%);
+}
+
+
+section.ferramentas .card {
+  padding: 40px 90px;
+}
+
+section.ferramentas p.text {
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+section.cards {
+  background-image: url("../../images/bg-left-rhevolution2.png"), url("../../images/bg-right-rhevolution2.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.biometria {
+  background-color: var(--white);
+}
+
+section.biometria .owl-carousel .card {
+  background: #fafafa;
+  /* max-width: 520px; */
+}
+
+section.biometria .owl-carousel .card h4 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+section.biometria .owl-carousel .owl-item img {
+  width: auto;
+}
+
+section.icones {
+  background-color: var(--white);
+}
+
+section.icones .bg-icone {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 80px;
+  background: #7375E1;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+section.icones div:hover > .bg-icone {
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(115, 117, 225, 0.8);
+  transition: all 0.3s;
+}
+
+section.gerenciamento {
+  background-color: var(--white);
+}
+
+section.gerenciamento .bg-card {
+  background-color: var(--secondary);
+  border-radius: 30px;
+  background-size: auto 100%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+section.gerenciamento .bg-card h2 {
+  color: var(--white);
+}
+
+section.gerenciamento .bg-card p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.integracao {
+  background-image: url("../../images/bg-left-rhevolution3.png"), url("../../images/bg-right-rhevolution3.png");
+  background-repeat: no-repeat;
+  background-position: left 155px, right 155px;
+}
+
+section.integracao .card {
+  padding: 135px 30px;
+}
+
+section.integracao .card .largura {
+  width: 100%;
+  max-width: 355px;
+  margin: auto;
+}
+
+section.time {
+  background-color: var(--white);
+}
+
+section.time .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 0 60px;
+  height: 687px;
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-left2.png"), url("../../images/bg-contato-right2.png");
+  background-repeat: no-repeat;
+  background-position: left 125px, right 125px;
+}
+
+section.contato .card {
+  padding: 10px 80px;
+}
+
+section.contato .card p {
+  color: var(--dark);
+}
+
+section.solucoes {
+  background-image: url("../../images/bg-rhevolution-left6.png"), url("../../images/bg-rhevolution-right6.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right 130px;
+  background-color: var(--white);
+}
+
+/* Media */
+@media (max-width: 450px) {
+  section.banner {
+    background-image: none;
+  }
+  section.ferramentas .card {
+    padding: 30px;
+  }
+  section.cards {
+    background-image: none;
+  }
+  section.integracao .card {
+    padding: 30px;
+  }
+  section.time .card {
+    padding: 30px;
+    height: auto;
+  }
+  section.solucoes {
+    background-image: none;
+  }
+  section.contato .card {
+    padding: 20px;
+  }
+  section.biometria .owl-carousel .owl-item img {
+    margin: auto;
+  }
+}

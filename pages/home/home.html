@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Techware</title>
+  <meta name="description" content="">
+  <meta name="Keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../images/favicon.PNG" type="image/x-icon">
+
+  <!-- Icons CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous">
+  <!-- Carousel e Animation - CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-sticky">
+    <div class="navbar-top">
+      <div class="container-fluid">
+        <div class="d-md-flex justify-content-end">
+          <ul class="nav mr-auto">
+            <li class="nav-item d-flex align-items-center border-left border-right">
+              <a class="nav-link py-0 d-flex align-items-center pr-0" onclick="changeFontSize(-2)"
+                href="javascript:void(0)">
+                A-
+              </a>
+              <a class="nav-link py-0 d-flex align-items-center" onclick="changeFontSize(2)" href="javascript:void(0)">
+                A+
+              </a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item d-flex align-items-center pr-0">
+              <a class="nav-link py-0 d-flex align-items-center mr-5" href="../contato/contato.html">
+                <img src="../../images/icon-email.svg" class="mr-2"> Contato
+              </a>
+              <a class="nav-link py-0 d-flex align-items-center" href="#">
+                <img src="../../images/icon-user.svg" class="mr-2"> Já Sou Cliente
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="navbar navbar-expand-lg border-bottom">
+      <nav class="container-fluid">
+        <a class="navbar-brand" href="../home/home.html">
+          <img src="../../images/logo-techware.svg">
+        </a>
+        <form class="form-inline">
+          <div class="nav-search">
+            <div class="searchbar">
+              <input class="search_input" type="text" name="" placeholder="Digite sua busca">
+              <button type="submit" class="border-0 btn-link search_icon">
+                <img src="../../images/icon-search.svg">
+              </button>
+            </div>
+          </div>
+        </form>
+        <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" onclick="toggleNavbar()">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../home/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cases/cases.html">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bpo/bpo.html">BPO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-3" href="../blog/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Banner -->
+  <section class="banner pt-0 pb-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-4 d-flex flex-column">
+          <img src="../../images/image-banner-home.png" class="img-fluid">
+        </div>
+        <div class="col-lg-8 mt-5">
+          <div class="card mb-4">
+            <p class="text-uppercase mb-1">TECNOLOGIA para Recursos Humanos</p>
+            <h2 class="mb-0">A verdadeira experiência do colaborador começa aqui!</h2>
+          </div>
+          <div class="card x2 px-lg-5 mb-4">
+            <h3 class="mb-1">Tecnologia e serviços que constroem a base do seu RH e elevam a experiência do pessoal no
+              trabalho. </h3>
+            <p class="mb-0">Conheça as soluções de Cloud e BPO de Folha Techware.</p>
+          </div>
+          <a href="#" class="btn btn-outline-purple mr-4 mb-3"> Conhecer o BPO de Folha </a>
+          <a href="#" class="btn btn-purple mb-3"> Conhecer o software Rhevolution </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="pt-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col">
+          <ul class="nav mb-4" role="tablist">
+            <li class="nav-item mr-4 mb-4">
+              <a class="btn btn-outline-purple active px-5" data-toggle="pill" href="#software">
+                Software de RH
+              </a>
+            </li>
+            <li class="nav-item mr-4 mb-4">
+              <a class="btn btn-outline-purple px-5" data-toggle="pill" href="#tercerizacao">
+                Tercerização da Folha
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-purple px-5" data-toggle="pill" href="#admissao">
+                Admissão Digital
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="software" role="tabpanel">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 mb-4">
+                  <img src="../../images/image-home3.png" class="img-fluid">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <p class="text-uppercase mb-1" style="font-size: 12px;"><b>Software de RH</b></p>
+                  <h2 class="mb-4">Rhevolution</h2>
+                  <p>
+                    Tecnologia para ressignificar a gestão do capital humano, com módulos desenvolvidos com foco na
+                    experiência de cada etapa da jornada do colaborador. O Rhevolution combina poderosas funcionalidades
+                    para gestão de RH com uma robusta folha de pagamento e sofisticados recursos para gerenciamento
+                    remoto da força de trabalho, facilitando a adaptação da sua empresa às transformações do modo de
+                    trabalho. 
+                  </p>
+                  <p>
+                    Transforme a sua organização através da experiência de pessoas conectadas com o Rhevolution da
+                    Techware.
+                  </p>
+                  <a class="btn btn-link-purple" data-toggle="pill" href="#">
+                    Conheça o Rhevolution <img src="../../images/icon-arrow-up-right.svg" class="icon-tech ml-2">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tercerizacao" role="tabpanel">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 mb-4">
+                  <img src="../../images/image-home4.png" class="img-fluid">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <p class="text-uppercase mb-1" style="font-size: 12px;"><b>Terceirização de folha</b></p>
+                  <h2 class="mb-4">BPO: Terceirização da Folha de Pagamento</h2>
+                  <p>
+                    Libere tempo para se concentrar na estratégia da sua área e do seu negócio, com um parceiro
+                    confiável para lidar com a complexidade do processamento da folha de pagamento em empresas com mais
+                    de 500 colaboradores.
+                  </p>
+                  <p>
+                    Ao contratar os serviços de BPO de folha de pagamento da Techware, você obtém soluções flexíveis,
+                    pensados sob medida para atender à sua organização, economizando tempo, dinheiro e consolidando uma
+                    base única, precisa e confiável para a construção de um RH transformador.
+                  </p>
+                  <a class="btn btn-link-purple" data-toggle="pill" href="#">
+                    Conheça o BPO <img src="../../images/icon-arrow-up-right.svg" class="icon-tech ml-2">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="admissao" role="tabpanel">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 mb-4">
+                  <img src="../../images/image-home5.png" class="img-fluid">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <p class="text-uppercase mb-1" style="font-size: 12px;"><b>Para o candidato e para o RH</b></p>
+                  <h2 class="mb-4">Admissão Digital</h2>
+                  <p>
+                    Com o Techware Admissão Digital, é possivel que tanto o RH quanto o candidato selecionado acompanhem
+                    e realizem todo o processo de pré-admissão de forma digital e remota. A ferrementa permite o
+                    regustro de todos as informações necessários para o processo admissional, anexar documenos, gerar
+                    kit admissional (?) assinar o contrato eletronicamente e muito mais.
+                  </p>
+                  <p>
+                    Transforme a sua organização através da experiência de pessoas conectadas com o Rhevolution da
+                    Techware.
+                  </p>
+                  <a class="btn btn-link-purple" data-toggle="pill" href="#">
+                    Conheça o módulo <img src="../../images/icon-arrow-up-right.svg" class="icon-tech ml-2">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="pt-0">
+    <div class="container-fluid">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-3 px-md-5">
+          <h2 class="pr-md-5">Construa uma base confiável para o seu RH e voe com Techware.</h2>
+          <p class="pr-md-5">
+            Tudo o que você precisa, de forma unificada e funcionando perfeitamente para o máximo desempenho de suas
+            pessoas. <strong>Esta é a Techware!</strong>
+          </p>
+        </div>
+        <div class="col-md-6 pr-md-5">
+          <img src="../../images/image-home6.png" class="w-100">
+        </div>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-md-7 mb-3">
+          <img src="../../images/image-home7.png" class="w-100">
+        </div>
+        <div class="col-md-5 px-md-5">
+          <p class="pl-md-5" style="font-size: 20px;">
+            De remuneração, com o melhor Cloud ou BPO de folha de pagamento do mercado, à gestão estratégica de RH, as
+            soluções da Techware levam mobilidade, <strong>criptografia de ponta a ponta e a melhor experiência do
+              colaborador em toda a sua jornada profissional. </strong>
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-5 px-md-5 mb-3">
+          <p class="pr-md-5" style="font-size: 20px;">
+            Se você deseja aumentar a performance de seus times, transformar digitalmente as relações de trabalho de
+            suas
+            pessoas com segurança e acuracidade e ainda fazer a gestão completa e moderna de RH, <strong>a Techware tem
+              uma solução única para ajudar você a construir hoje o futuro que planejou.</strong>
+          </p>
+        </div>
+        <div class="col-md-7">
+          <img src="../../images/image-home8.png" class="w-100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-md-center">
+          <h2>
+            <strong>Tudo o que você precisa em um só lugar.</strong> <br>
+            Com a melhor experiência para as suas pessoas.
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#">
+            <img src="../../images/image-animation.png" class="w-100">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="video">
+    <div class="container-fluid">
+      <div class="row mb-5 px-md-5">
+        <div class="col-md-8 pl-md-5">
+          <p class="text-uppercase mb-1 pl-md-5" style="font-size: 12px;"><b>Sobre a Techware</b></p>
+          <h2 class="pl-md-5">
+            Mais do que uma empresa de software e serviços de RH. Um parceiro para o crescimento dos seus negócios.
+          </h2>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-7 mb-3 px-md-5">
+          <a href="#">
+            <img src="../../images/capa-video.png" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 pl-md-5">
+          <p>
+            Promovemos a transformação digital na gestão do Capital Humano através de tecnologia e inovação. Com 31 anos
+            na indústria de software, somos uma HRTech que une os maiores especialistas em tecnologia do setor para
+            trazer o que há de mais inovador em nossas soluções e softwares, para gestão de Folha e BPO.
+          </p>
+          <a class="btn btn-purple mt-2" href="#">
+            Conheça melhor
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="numeros pt-0">
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col">
+          <h2>Nossos números</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 mb-3">
+          <div data-nbr class="card">
+            <h2><span>650</span> mil</h2>
+            <p class="mb-0"> funcionários com sua folha de pagamento <br> processada pelo Rhevolution</p>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3 pl-lg-0">
+          <div data-nbr class="card">
+            <h2><span>31</span> anos</h2>
+            <p class="mb-0"> de experiência em Folha de Pagamento</p>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3 pl-lg-0">
+          <div data-nbr class="card" style="min-height: 156px;">
+            <h2 class="mt-3"><span>14</span> anos</h2>
+            <p class="mb-0"> de experiência em BPO</p>
+          </div>
+        </div>
+      </div>
+      <div class="row pl-lg-5">
+        <div class="col-lg-5 mb-3 pl-lg-5">
+          <div data-nbr class="card">
+            <h2><span>10</span> anos</h2>
+            <p class="mb-0"> de experiência em gestão de Folha Cloud </p>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 pl-lg-0">
+          <div data-nbr class="card">
+            <h2><span>40</span> engenheiros</h2>
+            <p class="mb-0"> de software especialistas em folha</p>
+          </div>
+        </div>
+        <div class="col-lg-3 pl-lg-0">
+          <div data-nbr class="card">
+            <h2><span>130</span> clientes</h2>
+            <p class="mb-0"> de grande porte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="clientes">
+    <div class="container text-center mb-5">
+      <div class="row mb-5">
+        <div class="col text-md-center">
+          <h2>
+            Nossos clientes alcançam resultados surpreendentes
+          </h2>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente1.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente2.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente3.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#">
+          <img src="../../images/logo-cliente4.png" class="img-fluid">
+        </a>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mb-4">
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente5.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente6.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#" class="mr-5 mr-md-5">
+          <img src="../../images/logo-cliente7.png" class="img-fluid mr-md-5">
+        </a>
+        <a href="#">
+          <img src="../../images/logo-cliente8.png" class="img-fluid">
+        </a>
+      </div>
+      <a class="btn btn-link-purple" href="#">
+        Conheça alguns cases <img src="../../images/icon-arrow-up-right.svg" class="icon-tech ml-2">
+      </a>
+    </div>
+    <div class="container-fluid">
+      <div class="card bg">
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-lg-5 text-center text-sm-left d-flex align-items-center justify-content-center">
+            <div class="altura">
+              <h2>Alguns prêmios e <br>
+                reconhecimentos <br>
+                do mercado</h2>
+              <a class="btn btn-purple px-5 mt-4" href="#">
+                Ver todos os prêmios
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7 border-left">
+            <div class="altura px-md-5">
+              <div class="row text-center justify-content-between align-items-center">
+                <div class="col-lg-12">
+                  <div class="owl-carousel owl-theme testimonial text-left">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col mb-3">
+                            <div class="d-sm-flex justify-content-center align-items-center text-center text-sm-left">
+                              <div class="px-md-3 mb-3 mr-md-3">
+                                <img src="../../images/image-selo.png" class="img-fluid">
+                              </div>
+                              <div class="d-flex flex-column">
+                                <h4>Fornecedores de Confiança</h4>
+                                <p class="card-text">
+                                  15ª Pesquisa de Fornecedores de Confiança 
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col mb-3">
+                            <div class="d-sm-flex justify-content-center align-items-center text-center text-sm-left">
+                              <div class="px-md-3 mb-3 mr-md-3">
+                                <img src="../../images/image-selo2.png" class="img-fluid">
+                              </div>
+                              <div class="d-flex flex-column">
+                                <h4>Segmento Folha de Pagamento</h4>
+                                <p class="card-text">
+                                  Melhor avaliada em Folha de Pagamento
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col mb-3">
+                            <div class="d-sm-flex justify-content-center align-items-center text-center text-sm-left">
+                              <div class="px-md-3 mb-3 mr-md-3">
+                                <img src="../../images/image-selo3.png" class="img-fluid">
+                              </div>
+                              <div class="d-flex flex-column">
+                                <h4>Empresa Melhor Avaliada</h4>
+                                <p class="card-text">
+                                  Destaque do Ano
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col mb-3">
+                            <div class="d-sm-flex justify-content-center align-items-center text-center text-sm-left">
+                              <div class="px-md-3 mb-3 mr-md-3">
+                                <img src="../../images/image-selo4.png" class="img-fluid">
+                              </div>
+                              <div class="d-flex flex-column">
+                                <h4>Melhores Fornecedores para RH</h4>
+                                <p class="card-text">
+                                  Melhor avaliada em Folha de Pagamento
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 
+  <section class="simulador">
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <div class="card">
+            <p class="text-uppercase">Simulação do potencial de retorno</p>
+            <h2 class="mb-0"> Teste o potencial de retorno de nossas soluções. </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row pl-lg-5">
+        <div class="col-lg-8 pl-lg-5">
+          <a class="btn btn-purple mb-4" href="#"> Quero simular </a>
+          <div class="card p-5">
+            <p class="mb-0">
+              Com o Rhevolution, o seu negócio aumentará a performance e alcançará novos patamares na gestão de RH. Ele
+              pode ser implantado de forma independente ou integrado aos maiores ERPs do mercado. Faça o teste do
+              possível retorno e troque sua solução atual pela Techware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="depoimento">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-5">
+        <div class="col-lg-7 mb-4">
+          <h2>Quem já usa, recomenda o Rhevolution.</h2>
+        </div>
+        <div class="col-lg-5">
+          <p>
+            Veja o que dizem nossos clientes, na palavra de quem usa nossas soluções no dia a dia e vê resultados.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="card bg">
+        <div class="row text-center justify-content-between align-items-center">
+          <div class="col-lg-12">
+            <div class="position-relative ">
+              <div class="owl-carousel owl-theme testimonial text-left px-xl-5">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img src="../../images/icon-depo.png" class="w-auto mb-5">
+                        <p class="card-text mb-4">
+                          Adorei encontrar a Techware com grande destaque dentro do maior evento de RH, o CONARH 2022.
+                          Utilizamos o Rhevolution há mais de 10 anos e foi muito bacana a sensação de se dirigir ao
+                          Auditório Techware (auditório principal) para assistir as palestras. Muito legal também
+                          encontrar os colegas da Techware que participaram da migração de sistema lá atrás e todos
+                          continuam na empresa até hoje, diferente de outros players do mercado que trocam as pessoas de
+                          relacionamento e implantação a todo momento. Parabéns Techware pelo evento. 
+                        </p>
+                      </div>
+                      <div class="d-sm-flex align-items-center text-muted">
+                        <div class="fs-sm border-right px-md-5">
+                          <img src="../../images/image-depo.png" class="w-auto">
+                        </div>
+                        <div class="d-flex flex-column ml-md-5">
+                          <h4>Marino Placca Júnior</h4>
+                          <h5>Gerente de RH</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <img src="../../images/icon-depo.png" class="w-auto mb-5">
+                        <p class="card-text mb-4">
+                          “A consolidação do RH em uma plataforma única era fundamental para trazer ganhos para toda a
+                          companhia, incluindo os demais sistemas, que normalmente têm a base de RH como ponto principal
+                          para acessos.” 
+                        </p>
+                      </div>
+                      <div class="d-sm-flex align-items-center text-muted">
+                        <div class="fs-sm border-right px-md-5">
+                          <img src="../../images/logo-claro.png" class="w-auto">
+                        </div>
+                        <div class="d-flex flex-column ml-md-5">
+                          <h4>João Luiz Willo Marino </h4>
+                          <h5>Gerente de Administração de Pessoal - Claro Brasil</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section 
+  <section class="blog">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-sm-flex mb-4">
+          <h2 class="mb-3 mr-5">
+            Leia o blog da Techware
+          </h2>
+          <a class="btn btn-purple mb-3" href="#"> Quero simular </a>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-6 mb-4">
+          <div class="card destaque">
+            <a href="#" class="card-img mb-4">
+              <img class="card-img-top animated-image" src="" alt="imagem post">
+            </a>
+            <div class="card-body px-0">
+              <h3 class="card-title">lorem ipsum</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                aliquet odio mattis.
+              </p>
+              <a class="btn btn-link-purple" href="#">
+                Ler artigo <img src="../../images/icon-arrow-up-right.svg" class="icon-tech ml-2">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-12 mb-2">
+              <div class="card">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-5">
+                    <a href="#" class="card-img mb-3">
+                      <img src="../../images/foto-presenca.png" class="card-img animated-image" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body py-0">
+                      <h3 class="card-title">lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-2">
+              <div class="card">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-5">
+                    <a href="#" class="card-img mb-3">
+                      <img src="../../images/foto-presenca.png" class="card-img animated-image" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body py-0">
+                      <h3 class="card-title">lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-2">
+              <div class="card">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-5">
+                    <a href="#" class="card-img mb-3">
+                      <img src="../../images/foto-presenca.png" class="card-img animated-image" alt="...">
+                    </a>
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body py-0">
+                      <h3 class="card-title">lorem ipsum</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row newsletter justify-content-between align-items-center mb-5">
+        <div class="col-lg-5 mb-3 pr-lg-5">
+          <p class="pr-lg-5">
+            Mantenha-se informado sobre inovações em gestão de folha e RH
+            <span class="text-white">
+              <sotrng>assinando nossa newsletter.</sotrng>
+            </span>
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <form>
+            <div class="form-row form-label-group mb-0 align-items-center">
+              <div class="col-lg-5 mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Digite seu nome" required>
+              </div>
+              <div class="col-lg-5 mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="col-lg-2 mb-3">
+                <!-- Alerta de erro -->
+                <!-- <div class="alert alert-danger h6"> Preencha todos os campos. </div> -->
+                <button class="btn btn-light" type="submit"> Enviar </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../cases/cases.html">Cases</a></h5>
+          <!-- <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">A Techware</a></li>
+            <li class="nav-item"><a class="nav-link" href="../cases/cases.html">Cases de Sucesso</a></li>
+          </ul> -->
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../rhevolution/rhevolution.html">Rhevolution</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../bpo/bpo.html">BPO</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../ad/ad.html">Admissão Digital</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../contato/contato.html">Contato</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../blog/blog.html">Blog</a></h5>
+        </div>
+      </div>
+      <hr>
+      <div class="row my-5">
+        <div class="col">
+          <p class="text-white">Pessoas e tecnologia são a nossa essência. Inovação o nosso combustível.</p>
+          <p>
+            Com 30 anos na indústria de software, a Techware é formada pelos maiores especialistas em tecnologia para
+            Folha de Pagamento e RH do Brasil. Somos os agentes de mudança responsáveis pela transformação digital nas
+            empresas de ponta em uma das áreas mais importantes: o de recursos humanos.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="d-sm-flex align-items-center justify-content-between mt-5">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-youtube"></i></a> </li>
+          <li class="list-inline-item"> <a class="rede-social" href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+        </ul>
+
+        <span>
+          <ul class="nav text-primary-hover align-items-center">
+            <li class="nav-item"><a class="nav-link mr-4" href="../privacidade/privacidade.html">Politicas
+                Privacidade</a></li>
+            <li class="nav-item"><a class="nav-link mr-4" href="../sitemap/sitemap.html">Sitemap</a></li>
+            <li class="nav-item"><small>Copyright © Techware. Todos diretos reservados.</small></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- JS Custom -->
+  <script src="../../js/custom.js"></script>
+  <script src="home.js"></script>
+
+</body>
+
+</html>

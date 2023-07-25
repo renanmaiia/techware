@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Solicite um Orçamento - Techware</title>
+  <meta name="description" content="">
+  <meta name="Keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../images/favicon.PNG" type="image/x-icon">
+
+  <!-- Icons CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous">
+  <!-- Carousel e Animation - CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="orcamento.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-sticky">
+    <div class="navbar-top">
+      <div class="container-fluid">
+        <div class="d-md-flex justify-content-end">
+          <ul class="nav mr-auto">
+            <li class="nav-item d-flex align-items-center border-left border-right">
+              <a class="nav-link py-0 d-flex align-items-center pr-0" onclick="changeFontSize(-2)"
+                href="javascript:void(0)">
+                A-
+              </a>
+              <a class="nav-link py-0 d-flex align-items-center" onclick="changeFontSize(2)" href="javascript:void(0)">
+                A+
+              </a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item d-flex align-items-center pr-0">
+              <a class="nav-link py-0 d-flex align-items-center mr-5" href="../contato/contato.html">
+                <img src="../../images/icon-email.svg" class="mr-2"> Contato
+              </a>
+              <a class="nav-link py-0 d-flex align-items-center" href="#">
+                <img src="../../images/icon-user.svg" class="mr-2"> Já Sou Cliente
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="navbar navbar-expand-lg border-bottom">
+      <nav class="container-fluid">
+        <a class="navbar-brand" href="../home/home.html">
+          <img src="../../images/logo-techware.svg">
+        </a>
+        <form class="form-inline">
+          <div class="nav-search">
+            <div class="searchbar">
+              <input class="search_input" type="text" name="" placeholder="Digite sua busca" id="termoPesquisa">
+              <button type="submit" class="border-0 btn-link search_icon">
+                <img src="../../images/icon-search.svg">
+              </button>
+            </div>
+          </div>
+        </form>
+        <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" onclick="toggleNavbar()">
+          <span class="navbar-toggler-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../home/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cases/cases.html">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../bpo/bpo.html">BPO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-3" href="../blog/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Breadcrumb -->
+  <section class="py-3 py-md-5">
+    <div class="container-fluid">
+      <nav class="navbar-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../home/home.html">Página inicial</a></li>
+          <li class="breadcrumb-item"><a href="../contato/contato.html">Contato</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Solicite um Orçamento</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="contato pt-0 pb-5">
+    <div class="container-tech">
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="card">
+            <div class="d-lg-flex justify-content-center align-items-center">
+              <div class="d-flex mr-lg-5">
+                <img src="../../images/image-orcamento.png">
+              </div>
+              <div class="flex-column p-4 px-lg-5">
+                <h2 class="mb-4">Solicite um <br> orçamento</h2>
+                <p>
+                  Todas as ferramentas necessárias para os processos do seu RH estão aqui, em uma única plataforma.
+                  Solicite um orçamento ou ligue para <a href="tel:(11) 3871-7485">(11) 3871-7485</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="orcamento pt-5">
+    <div class="container-tech">
+      <div class="row px-lg-5">
+        <div class="col px-lg-3">
+          <div class="card">
+            <div class="row">
+              <div class="col text-lg-center mb-4">
+                <h2>Solicitação de orçamento</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col px-lg-5">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Nome*" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control form-control-lg" placeholder="E-mail*" required>
+                    <!-- <small class="form-text text-danger pl-4">E-mail inválido.</small> -->
+                  </div>
+                  <div class="form-group">
+                    <input type="number" class="form-control form-control-lg" placeholder="Telefone*" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Empresa">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Cargo">
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control form-control-lg">
+                      <option value="">Número de funcionários</option>
+                      <option>Número de funcionários 2</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control form-control-lg">
+                      <option value="">Modalidade de Comercialização</option>
+                      <option>Modalidade de Comercialização 2</option>
+                    </select>
+                  </div>
+                  <div class="row px-lg-5 my-4">
+                    <div class="col-12 mb-1">
+                      <h6 style="color: var(--purple)">Produtos</h6>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="1">
+                            <label class="form-check-label" for="1">Alert</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="2">
+                            <label class="form-check-label" for="2">Banco de Horas</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="3">
+                            <label class="form-check-label" for="3">Cargos e Salários</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="4">
+                            <label class="form-check-label" for="4">eSocial</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="5">
+                            <label class="form-check-label" for="5">Folha de Pagamento</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="6">
+                            <label class="form-check-label" for="6">Gerador de Relatórios</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="7">
+                            <label class="form-check-label" for="7">Gestão de Benefícios</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="8">
+                            <label class="form-check-label" for="8">Gestão de Competências</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="9">
+                            <label class="form-check-label" for="9">Gestão de Desempenho</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="10">
+                            <label class="form-check-label" for="10">Gestão de Terceiros</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="11">
+                            <label class="form-check-label" for="11">Indicadores de Recursos Humanos</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="12">
+                            <label class="form-check-label" for="12">Mobile</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="13">
+                            <label class="form-check-label" for="13">Planejamento e Orçamento de Pessoal</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="14">
+                            <label class="form-check-label" for="14">Portal de Recursos Humanos</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="15">
+                            <label class="form-check-label" for="15">Previdência Privada</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="16">
+                            <label class="form-check-label" for="16">Programa de Participação em Resultados</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="17">
+                            <label class="form-check-label" for="17">Recrutamento e Seleção</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="18">
+                            <label class="form-check-label" for="18">Rhevolution Open Interface</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="19">
+                            <label class="form-check-label" for="19">Rhevolution Scheduler & Performance</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="20">
+                            <label class="form-check-label" for="20">Saúde e Segurança Ocupacional</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="21">
+                            <label class="form-check-label" for="21">Timekeeper</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="22">
+                            <label class="form-check-label" for="22">Treinamento e Desenvolvimento</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="23">
+                            <label class="form-check-label" for="23">Workflow</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control form-control-lg" placeholder="Observações:" rows="5"></textarea>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="form-check my-5 mx-3">
+                      <input type="checkbox" class="form-check-input" id="24">
+                      <label class="form-check-label" for="24">
+                        Concordo com o envio dos meus dados e a utilização dos <br> mesmos para eventuais campanhas e
+                        retorno comercial.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group text-lg-center">
+                    <button type="submit" class="btn btn-purple">Enviar solicitação</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row newsletter justify-content-between align-items-center mb-5">
+        <div class="col-lg-5 mb-3 pr-lg-5">
+          <p class="pr-lg-5">
+            Mantenha-se informado sobre inovações em gestão de folha e RH
+            <span class="text-white">
+              <sotrng>assinando nossa newsletter.</sotrng>
+            </span>
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <form>
+            <div class="form-row form-label-group mb-0 align-items-center">
+              <div class="col-lg-5 mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Digite seu nome" required>
+              </div>
+              <div class="col-lg-5 mb-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="col-lg-2 mb-3">
+                <!-- Alerta de erro -->
+                <!-- <div class="alert alert-danger h6"> Preencha todos os campos. </div> -->
+                <button class="btn btn-light" type="submit"> Enviar </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../cases/cases.html">Cases</a></h5>
+          <!-- <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">A Techware</a></li>
+            <li class="nav-item"><a class="nav-link" href="../cases/cases.html">Cases de Sucesso</a></li>
+          </ul> -->
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../rhevolution/rhevolution.html">Rhevolution</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../bpo/bpo.html">BPO</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../ad/ad.html">Admissão Digital</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../contato/contato.html">Contato</a></h5>
+        </div>
+        <div class="col col-lg text-center mb-4">
+          <h5><a href="../blog/blog.html">Blog</a></h5>
+        </div>
+      </div>
+      <hr>
+      <div class="row my-5">
+        <div class="col">
+          <p class="text-white">Pessoas e tecnologia são a nossa essência. Inovação o nosso combustível.</p>
+          <p>
+            Com 30 anos na indústria de software, a Techware é formada pelos maiores especialistas em tecnologia para
+            Folha de Pagamento e RH do Brasil. Somos os agentes de mudança responsáveis pela transformação digital nas
+            empresas de ponta em uma das áreas mais importantes: o de recursos humanos.
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="d-sm-flex align-items-center justify-content-between mt-5">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-youtube"></i></a> </li>
+          <li class="list-inline-item"> <a class="rede-social" href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+        </ul>
+
+        <span>
+          <ul class="nav text-primary-hover align-items-center">
+            <li class="nav-item"><a class="nav-link mr-4" href="../privacidade/privacidade.html">Politicas
+                Privacidade</a></li>
+            <li class="nav-item"><a class="nav-link mr-4" href="../sitemap/sitemap.html">Sitemap</a></li>
+            <li class="nav-item"><small>Copyright © Techware. Todos diretos reservados.</small></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- JS Custom -->
+  <script src="../../js/custom.js"></script>
+
+</body>
+
+</html>

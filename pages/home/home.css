@@ -1,0 +1,99 @@
+section.banner {
+  background-image: url("../../images/bg-home-left.png"), url("../../images/bg-home-right.png");
+  background-color: #F1F1F1;
+  background-repeat: no-repeat;
+  background-position: left 50px, right 50px;
+}
+
+section.banner .card {
+  max-width: 530px;
+  padding: 40px 20px;
+}
+
+section.banner .card.x2 {
+  max-width: 560px;
+  padding: 35px;
+}
+
+section.banner .card h3 {
+  font-size: 20px;
+  color: var(--secundary);
+}
+
+section.image {
+  background-color: var(--white);
+}
+
+section.image h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+section.video {
+  background-image: url("../../images/bg-video.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+section.numeros .card {
+  padding: 30px 60px;
+  transition: all 0.3s;
+}
+
+section.numeros .card:hover {
+  box-shadow: 0 0 0 4px rgba(155, 0, 119, 0.2);
+  transition: all 0.3s;
+}
+
+section.numeros .card h2 {
+  color: var(--purple);
+}
+
+section.clientes {
+  background-color: var(--white);
+}
+
+section.clientes .altura {
+  padding: 100px 0;
+}
+
+section.clientes .card.bg {
+  border: 1px solid #BDBDBD;
+}
+
+section.clientes a img {
+  transition: all 0.3s;
+}
+
+section.clientes a img:hover {
+  margin-top: -10px;
+  transition: all 0.3s;
+}
+
+section.simulador {
+  background-image: url("../../images/bg-home-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+section.simulador .card {
+  padding: 80px;
+}
+
+/* Media */
+@media (max-width: 450px) {
+  section.banner {
+    background-image: none;
+  }
+  section.simulador {
+    background-image: none;
+  }
+  section.simulador .card {
+    padding: 30px;
+  }
+  section.clientes .altura {
+    padding: 30px 0;
+  }
+}
