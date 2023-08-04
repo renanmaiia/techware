@@ -1,0 +1,255 @@
+section.banner {
+  background-image: url("../../images/bg-ad-left.png"), url("../../images/bg-ad-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.banner .card {
+  padding: 38px 50px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+section.banner .card h1 {
+  font-size: 32px;
+}
+
+section.banner .card.x2 {
+  padding: 100px;
+  margin-top: 20px;
+}
+
+section.banner .mt {
+  margin-top: 100px;
+}
+
+section.rh {
+  background-image: url("../../images/bg-ad-left1.png"), url("../../images/bg-ad-right1.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.rh .card {
+  background-color: #F6F6F6;
+  padding: 40px 130px;
+}
+
+section.integracao {
+  background-image: url("../../images/bg-ad-left2.png"), url("../../images/bg-ad-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.integracao .card {
+  padding: 50px;
+  background-color: #F6F6F6;
+}
+
+section.integracao p {
+  font-size: 20px;
+}
+
+section.integracao .card .largura {
+  width: 100%;
+  max-width: 355px;
+  margin: auto;
+}
+
+section.agilidade {
+  background-image: url("../../images/bg-ad-right3.png");
+  background-repeat: no-repeat;
+  background-position: right 80px;
+}
+
+section.agilidade .card {
+  background: var(--purple);
+  color: var(--white);
+  padding: 100px;
+}
+
+section.agilidade .card h2 {
+  color: var(--white);
+}
+
+section.icones {
+  background-color: var(--white);
+}
+
+section.icones p {
+  font-size: 18px;
+}
+
+section.processos {
+  background-color: #F9F9F9;
+}
+
+section.processos .bg-icone {
+  width: 72px;
+  height: 72px;
+  line-height: 67px;
+  background: #4B70DB;
+  border-radius: 50%;
+  margin: 10px auto;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+section.processos .bg-icone img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+section.processos div:hover>.bg-icone {
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(75, 111, 219, 0.7);
+  transition: all 0.3s;
+}
+
+section.processos .card-acoes {
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.processos .card-acoes p {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+section.processos .vr {
+  display: inline-block;
+  align-self: center;
+  margin: 10px 20px 10px 5px;
+  min-height: 1em;
+  opacity: 1;
+}
+
+section.certificado {
+  background-image: url("../../images/bg-bpo-left2.png"), url("../../images/bg-bpo-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.certificado .card {
+  background-color: #FAFAFA;
+  padding: 8px 0;
+}
+
+section.ferramentas {
+  background-image: url("../../images/bg-bpo-left3.png"), url("../../images/bg-bpo-right2.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right top;
+}
+
+section.ferramentas .card {
+  max-width: 700px;
+  padding: 33px 70px;
+}
+
+section.ferramentas p.text {
+  width: 100%;
+  max-width: 510px;
+}
+
+section.atendimento {
+  background-image: url("../../images/bg-bpo-left4.png"), url("../../images/bg-bpo-right4.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.atendimento .card {
+  height: 252px;
+  padding: 0 40px;
+  transition: all 0.3s;
+}
+
+section.atendimento .card:hover {
+  margin-top: -3px;
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(155, 0, 119, 0.3);
+  transition: all 0.3s;
+}
+
+section.atendimento .card img {
+  margin: 60px auto 20px;
+}
+
+section.cards {
+  background-color: var(--white);
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 51%, right 51%;
+}
+
+section.contato .card {
+  padding: 15px;
+  background-image: var(--bg-roxo);
+  color: var(--white);
+  max-height: 85%;
+  overflow: initial;
+}
+
+section.contato .card h2 {
+  color: var(--white);
+}
+
+/* Media */
+@media (max-width: 1200px) {
+  section.banner {
+    background-image: none;
+  }
+
+  section.banner .card {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  section.banner .card.x2 {
+    padding: 30px;
+  }
+
+  section.banner .mt {
+    margin-top: 0;
+  }
+
+  section.processos .vr {
+    display: none;
+  }
+
+  section.contato .card {
+    padding: 30px;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  section.banner .card {
+    padding: 30px;
+  }
+
+  section.rh {
+    background-image: none;
+  }
+
+  section.rh .mr-lg-4>img {
+    width: 100%;
+  }
+
+  section.rh .card {
+    padding: 30px;
+  }
+
+  section.integracao {
+    background-image: none;
+  }
+
+  section.agilidade .card {
+    padding: 30px;
+  }
+}

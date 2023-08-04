@@ -1,0 +1,59 @@
+.navbar-sticky-on {
+  position: relative;
+}
+
+section.banner {
+  background-image: url("../../images/bg-page2.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding: 55px 0;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.breadcrumb-item a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--secondary);
+}
+
+.navbar-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+  color: var(--secondary);
+}
+
+section.privacidade {
+  background-color: var(--white);
+}
+
+section.privacidade .nav-link {
+  color: var(--purple);
+  font-size: 18px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(155, 155, 155, 0.5);
+}
+
+section.privacidade .nav-link:hover {
+  color: var(--dark);
+}
+
+section.privacidade .nav-link:focus {
+  color: var(--dark);
+}
+
+/* Media */
+@media (max-width: 450px) {
+  section.banner {
+    background-image: none;
+  }
+}

@@ -1,0 +1,312 @@
+section.banner {
+  background-image: url("../../images/bg-bpo-left.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+section.banner .card {
+  max-width: 742px;
+  padding: 40px;
+  margin-top: 126px;
+  margin-bottom: 50px;
+}
+
+section.banner .card h1 {
+  font-size: 32px;
+}
+
+section.banner .max {
+  max-width: 730px;
+}
+
+section.banner p.h5 {
+  line-height: 30px;
+}
+
+section.rh {
+  background-color: var(--white);
+}
+
+section.rh .card {
+  background-color: #F6F6F6;
+  padding: 50px 100px;
+  max-width: 963px;
+  margin: auto;
+}
+
+section.rh .card p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.certificado {
+  background-image: url("../../images/bg-bpo-left2.png"), url("../../images/bg-bpo-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.certificado .card {
+  background-color: #FAFAFA;
+  padding: 8px 0;
+}
+
+section.ferramentas {
+  background-image: url("../../images/bg-bpo-left3.png"), url("../../images/bg-bpo-right2.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right top;
+}
+
+section.ferramentas .card {
+  max-width: 700px;
+  padding: 33px 70px;
+}
+
+section.ferramentas p.text {
+  width: 100%;
+  max-width: 510px;
+}
+
+section.atendimento {
+  background-image: url("../../images/bg-bpo-left4.png"), url("../../images/bg-bpo-right4.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.atendimento .card {
+  height: 252px;
+  padding: 0 40px;
+  transition: all 0.3s;
+}
+
+section.atendimento .card:hover {
+  margin-top: -3px;
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(155, 0, 119, 0.3);
+  transition: all 0.3s;
+}
+
+section.atendimento .card img {
+  margin: 60px auto 20px;
+}
+
+section.cards {
+  background-color: var(--white);
+}
+
+section.agilidade {
+  background-image: url("../../images/bg-bpo-right5.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+section.agilidade .card {
+  background: #f4f4f4;
+  padding: 30px 80px;
+}
+
+section.agilidade ul li {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+section.contato2 {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 60px, right 60px;
+}
+
+section.contato2 .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.contato2 .card p {
+  color: var(--dark);
+}
+
+section.biometria {
+  background-color: var(--white);
+}
+
+section.biometria .owl-carousel .card {
+  background: #fafafa;
+}
+
+section.biometria .owl-carousel .card h4 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+section.biometria .owl-carousel .owl-item img {
+  width: auto;
+}
+
+section.ganhos {
+  background-image: url("../../images/bg-bpo-right6.png");
+  background-repeat: no-repeat;
+  background-position: right 80px;
+}
+
+section.ganhos .card {
+  max-width: 700px;
+  padding: 33px 70px;
+}
+
+section.ganhos .bg-icone {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 80px;
+  background: #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+section.ganhos .hover:hover .bg-icone {
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(161, 161, 161, 0.4);
+  transition: all 0.3s;
+}
+
+section.ganhos hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(to right, #161E2E, var(--purple));
+}
+
+section.integracao {
+  background-image: url("../../images/bg-bpo-left7.png"), url("../../images/bg-bpo-right7.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.integracao .card {
+  padding: 50px;
+}
+
+section.integracao .card .largura {
+  width: 100%;
+  max-width: 355px;
+  margin: auto;
+}
+
+section.clientes {
+  background-color: var(--white);
+}
+
+section.clientes .altura {
+  padding: 100px 0;
+}
+
+section.clientes .card.bg {
+  border: 1px solid #BDBDBD;
+}
+
+section.clientes a img {
+  transition: all 0.3s;
+}
+
+section.clientes a img:hover {
+  margin-top: -10px;
+  transition: all 0.3s;
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 60px, right 60px;
+}
+
+section.contato .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.contato .card p {
+  color: var(--dark);
+}
+
+section.solucoes {
+  background-image: url("../../images/bg-bpo-left8.png"), url("../../images/bg-rhevolution-right6.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.solucoes .card {
+  padding: 26px 80px;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+  section.banner {
+    background-image: none;
+  }
+
+  section.banner .card {
+    padding: 30px;
+    margin-top: 0;
+  }
+
+  section.biometria .owl-carousel .owl-item img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  section.rh .card {
+    padding: 30px;
+  }
+
+  section.ferramentas {
+    background-image: none;
+  }
+
+  section.ferramentas .card {
+    padding: 30px;
+  }
+
+  section.agilidade {
+    background-image: none;
+  }
+
+  section.agilidade .card {
+    background: #f4f4f4;
+    padding: 30px;
+  }
+
+  section.contato2 .card {
+    padding: 20px;
+  }
+
+  section.contato2 {
+    background-image: none;
+  }
+
+  section.integracao .card {
+    padding: 30px;
+  }
+
+  section.integracao {
+    background-image: none;
+  }
+
+  section.clientes .altura {
+    padding: 30px 0;
+  }
+
+  section.contato .card {
+    padding: 20px;
+  }
+
+  section.solucoes {
+    background-image: none;
+  }
+
+  section.solucoes .card {
+    padding: 30px;
+  }
+}

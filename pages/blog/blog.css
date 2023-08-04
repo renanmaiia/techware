@@ -1,0 +1,211 @@
+.animated-image {
+  transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+  transform: scale(1.1);
+}
+
+.btn.btn-link-purple {
+  border-bottom: 0;
+  line-height: 27px;
+}
+
+.card {
+  border-radius: 16px;
+}
+
+section.banner {
+  background-image: url("../../images/bg-pag-interna.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+section.banner h1 {
+  width: 100%;
+  max-width: 468px;
+}
+
+.search input.form-control {
+  height: 50px;
+  border-radius: 8px;
+  padding-left: 30px;
+  border-color: #F5F6F7;
+  background-color: #edeff0;
+  transition: transform 0.3s ease;
+}
+
+.search input.form-control::placeholder {
+  color: var(--secondary);
+  font-weight: normal;
+}
+
+.search input.form-control:focus {
+  box-shadow: 0 9px 15px rgba(136, 136, 136, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.search img {
+  right: 20px;
+  top: 15px;
+  z-index: 99;
+}
+
+.search select.form-control {
+  background-image: url(../../images/icon-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+  appearance: none;
+  padding-left: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--purple);
+  color: var(--secondary);
+  font-size: 17px;
+  height: 50px;
+  font-weight: normal;
+  transition: transform 0.3s ease;
+}
+
+.search select.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(126, 71, 221, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Card recentes */
+section.blog .card a {
+  max-height: 160px;
+  border-radius: 16px;
+  float: left;
+}
+
+section.blog .card.destaque>a {
+  max-height: 315px;
+  border-radius: 16px;
+  background: #DEDDDD;
+}
+
+section.blog .card.destaque .card-body {
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 22px;
+}
+
+.badge.post {
+  background: rgba(155, 0, 119, 0.10);
+  color: #9B0077;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+section.blog .card h3 {
+  font-size: 23px !important;
+  color: var(--dark) !important;
+  text-transform: none !important;
+}
+
+section.blog .card .card-body {
+  padding: 30px 0;
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 22px;
+}
+
+section.blog hr {
+  border: 1px dashed #575757;
+  opacity: 0.2;
+  margin: 30px 0;
+}
+
+section.list {
+  background-color: var(--white);
+}
+
+section.list .card h3 {
+  font-size: 18px !important;
+  color: var(--dark) !important;
+  text-transform: none !important;
+}
+
+section.list .card .card-body {
+  padding: 30px 0;
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 22px;
+}
+
+section.list .owl-carousel .owl-item a.btn>img {
+  display: inline;
+  width: auto;
+}
+
+section.list .card a {
+  max-height: auto;
+  border-radius: 16px;
+  float: left;
+}
+
+section.list .owl-dots,
+.owl-nav {
+  position: absolute;
+  right: 17px;
+  top: -45px;
+}
+
+section.list .owl-nav .owl-prev {
+  margin-left: -30px;
+}
+
+section.list .owl-nav .owl-next {
+  left: 10px;
+}
+
+section.list .owl-nav .owl-prev,
+section.list .owl-nav .owl-next {
+  color: var(--secondary) !important;
+}
+
+section.list .owl-nav .owl-prev:hover,
+section.list .owl-nav .owl-next:hover {
+  color: var(--purple) !important;
+}
+
+section.list .owl-nav .owl-prev:focus,
+section.list .owl-nav .owl-next:focus {
+  color: var(--purple) !important;
+}
+
+/* Single */
+section.single {
+  background-color: var(--white);
+}
+
+section.single h1 {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-end {
+  border-right: 1px solid #424242;
+}
+
+/* Media */
+@media (max-width: 1200px) {
+  section.banner {
+    background-image: none;
+  }
+}
+
+@media (max-width: 450px) {
+  section.single h1 {
+    font-size: 28px;
+  }
+
+  .border-end {
+    border-right: 0;
+  }
+}

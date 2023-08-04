@@ -1,0 +1,33 @@
+section.error {
+  background-image: url("../../images/bg-404.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+section.error h1 {
+  font-size: 148px;
+  font-weight: normal;
+  color: var(--purple);
+  margin-bottom: 0;
+}
+
+section.error .w-404 {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Media */
+@media (max-width: 575px) {
+  section.error h1 {
+    font-size: 90px;
+  }
+
+  section.error div>img {
+    display: none;
+  }
+
+  section.error .w-404 {
+    max-width: none;
+  }
+}

@@ -180,6 +180,19 @@ h6 {
   transition: all 0.3s;
 }
 
+.btn.btn-outline-default {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.btn.btn-outline-default:hover {
+  background: var(--white);
+  color: var(--purple);
+  transition: all 0.3s;
+}
+
 .btn.btn-sm {
   line-height: 28px;
   padding: 5px 12px;
@@ -320,6 +333,10 @@ header .navbar-top ul a:hover {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: var(--purple)
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
   color: var(--purple)
 }
 
