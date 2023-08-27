@@ -15,8 +15,11 @@ section.banner .card h1 {
 }
 
 section.banner .card.x2 {
-  padding: 100px;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+  min-height: 333px;
 }
 
 section.banner .mt {
@@ -66,7 +69,10 @@ section.agilidade {
 section.agilidade .card {
   background: var(--purple);
   color: var(--white);
-  padding: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 70px;
+  min-height: 402px;
 }
 
 section.agilidade .card h2 {

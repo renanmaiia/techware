@@ -1,0 +1,44 @@
+.btn.btn-outline-purple {
+  color: var(--dark);
+}
+
+section.contato {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 60px, right 60px;
+}
+
+section.contato .card {
+  padding: 10px 80px;
+  background: #D9D9D9;
+}
+
+section.contato .card p {
+  color: var(--dark);
+}
+
+section.orcamento {
+  background-image: url("../../images/bg-contact-left.png"), url("../../images/bg-contact-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right 300px;
+}
+
+section.orcamento .card {
+  padding: 70px;
+}
+
+/* Media */
+@media (max-width: 450px) {
+  section.contato {
+    background-image: none;
+  }
+  section.contato .card {
+    padding: 10px;
+  }
+  section.contato .card img {
+    width: 100%;
+  }
+  section.orcamento .card {
+    padding: 20px;
+  }
+}

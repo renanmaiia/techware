@@ -1,18 +1,30 @@
 section.banner {
   background-image: url("../../images/bg-home-left.png"), url("../../images/bg-home-right.png");
-  background-color: #F1F1F1;
+  background-color: var(--cinza-claro);
   background-repeat: no-repeat;
   background-position: left 50px, right 50px;
 }
 
 section.banner .card {
-  max-width: 530px;
-  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  min-height: 181px;
+  margin-right: 265px;
 }
 
-section.banner .card.x2 {
-  max-width: 560px;
-  padding: 35px;
+section.banner .card2 {
+  border: 0;
+  border-radius: 30px;
+  background: var(--white);
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  min-height: 150px;
+  margin-right: 205px;
 }
 
 section.banner .card h3 {
@@ -74,26 +86,60 @@ section.clientes a img:hover {
 section.simulador {
   background-image: url("../../images/bg-home-5.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% auto;
+  background-position: left 80px;
 }
 
 section.simulador .card {
-  padding: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 60px;
+  min-height: 218px;
+}
+
+section.simulador .card.two {
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px !important;
+  min-height: 130px;
+}
+
+section.agende {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 105px, right 105px;
+}
+
+section.agende .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.agende .card p {
+  color: var(--dark);
 }
 
 /* Media */
 @media (max-width: 450px) {
-  section.banner {
+  section.banner, section.simulador, section.agende {
     background-image: none;
   }
-  section.simulador {
-    background-image: none;
+  section.banner img {
+    margin-top: 0 !important;
+  }
+  section.banner .card, section.banner .card2 {
+    margin-right: 0;
+  }
+  section.simulador img {
+    position: relative !important;
+    top: 20px !important;
   }
   section.simulador .card {
     padding: 30px;
   }
   section.clientes .altura {
     padding: 30px 0;
+  }
+  section.agende .card {
+    padding: 30px;
   }
 }

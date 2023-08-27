@@ -1,0 +1,85 @@
+.animated-image {
+  transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+  transform: scale(1.1);
+}
+
+.btn.btn-link-purple {
+  border-bottom: 0;
+  line-height: 27px;
+}
+
+section.banner {
+  background-color: var(--white);
+}
+
+section.banner h1 {
+  font-weight: normal;
+}
+
+/* Card recentes */
+section.blog .card {
+  background-color: #FAFAFA;
+  padding: 40px;
+}
+
+section.blog .card a.img {
+  min-height: 302px;
+  border-radius: 30px;
+  float: left;
+}
+
+.badge.post {
+  background: rgba(155, 0, 119, 0.10);
+  color: #9B0077;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+section.blog .card h3 {
+  font-size: 23px !important;
+  color: var(--dark) !important;
+  text-transform: none !important;
+}
+
+section.blog .card .card-body {
+  padding: 30px 0;
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 22px;
+}
+
+section.list {
+  background-color: var(--white);
+}
+
+section.list .card h3 {
+  font-size: 24px !important;
+  color: var(--dark) !important;
+  text-transform: none !important;
+}
+
+section.list .card .card-body {
+  padding: 30px 0;
+  font-size: 16px;
+  color: var(--secondary);
+  line-height: 22px;
+}
+
+section.list .card a {
+  max-height: auto;
+  border-radius: 16px;
+  float: left;
+}
+
+/* Media */
+@media (max-width: 450px) {
+  section.single h1 {
+    font-size: 28px;
+  }
+}

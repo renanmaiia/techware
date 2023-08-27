@@ -1,3 +1,29 @@
+// Button ver mais
+document.addEventListener("DOMContentLoaded", function() {
+  const verMaisMenosBtn = document.getElementById("ver-mais-menos");
+  const iconeSeta = document.getElementById("icone-seta");
+  const btnText = verMaisMenosBtn.querySelector(".btn-text");
+  
+  verMaisMenosBtn.addEventListener("click", function() {
+      const oracleContent = document.querySelector(verMaisMenosBtn.getAttribute("href"));
+      const isCollapsed = oracleContent.classList.contains("show");
+      
+      if (isCollapsed) {
+          btnText.textContent = "Ver mais";
+          iconeSeta.classList.remove("flip");
+      } else {
+          btnText.textContent = "Ver menos";
+          iconeSeta.classList.add("flip");
+      }
+  });
+});
+
+// Dark mode
+function changeDarkMode() {
+  var htmlElement = document.getElementsByTagName("html")[0];
+  htmlElement.classList.toggle("dark");
+}
+
 // Font size + e -
 function changeFontSize(delta) {
   var htmlElement = document.getElementsByTagName("html")[0];

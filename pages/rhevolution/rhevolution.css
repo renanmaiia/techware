@@ -6,7 +6,11 @@ section.banner {
 
 section.banner .card {
   max-width: 306px;
-  padding: 40px 20px;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  min-height: 340px;
 }
 
 section.banner .card h1 {
@@ -20,13 +24,19 @@ section.banner .x2 p {
   font-size: 20px;
 }
 
-section.suite {
-  background-color: var(--white);
+.btn.p-x2 {
+  padding: 0 150px;
 }
 
 section.suite .card {
-  background-color: #F6F6F6;
   padding: 70px 30px;
+}
+
+section.suite a.btn {
+  height: auto;
+  font-size: 16px;
+  width: 160px;
+  border-radius: 30px;
 }
 
 section.suite a {
@@ -46,13 +56,13 @@ section.suite a {
 
 section.suite a:hover {
   text-decoration: none;
-  color: var(--white) !important;
+  color: #FFFFFF !important;
   transition: all 0.3s;
 }
 
 section.suite a.active {
   text-decoration: none;
-  color: var(--white) !important;
+  color: #FFFFFF !important;
   transition: all 0.3s;
 }
 
@@ -155,9 +165,11 @@ section.suite a.vermelho.active {
   background: linear-gradient(90deg, #45A3DD 0%, #CA2B2B 100%);
 }
 
-
 section.ferramentas .card {
-  padding: 40px 90px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 90px;
+  min-height: 347px;
 }
 
 section.ferramentas p.text {
@@ -208,9 +220,28 @@ section.icones .bg-icone {
   transition: all 0.3s;
 }
 
-section.icones div:hover > .bg-icone {
+section.icones div:hover>.bg-icone {
   box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(115, 117, 225, 0.8);
   transition: all 0.3s;
+}
+
+section.agende {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 50px, right 50px;
+}
+
+section.agende .card {
+  background: #E3E3E3;
+  display: flex;
+  justify-content: center;
+  padding: 20px 80px;
+  min-height: 329px;
+}
+
+section.agende .card p {
+  color: var(--dark);
 }
 
 section.gerenciamento {
@@ -241,7 +272,10 @@ section.integracao {
 }
 
 section.integracao .card {
-  padding: 135px 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  min-height: 558px;
 }
 
 section.integracao .card .largura {
@@ -261,6 +295,7 @@ section.time .card {
   background-color: #f3f3f3;
   padding: 0 60px;
   height: 687px;
+  max-width: 377px;
 }
 
 section.contato {
@@ -284,31 +319,849 @@ section.solucoes {
   background-color: var(--white);
 }
 
+section.simulador {
+  background-image: url("../../images/bg-rhevolution-left7.png"), url("../../images/bg-rhevolution-right7.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.simulador .w-simulador {
+  width: 100%;
+  max-width: 785px;
+  margin: auto;
+}
+
+/* Cloud + */
+section.title-cloud {
+  background-image: url("../../images/bg-cloud-left1.png"), url("../../images/bg-cloud-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title-cloud .card {
+  padding: 30px 70px;
+  margin-right: 315px;
+}
+
+section.title-cloud .card h2 {
+  font-weight: normal;
+}
+
+section.cloud .card {
+  padding: 40px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+section.cloud p.text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 37px;
+}
+
+section.proposito {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 30px, right 30px;
+}
+
+section.proposito .w-700 {
+  max-width: 730px;
+  width: 100%;
+  margin: auto;
+}
+
+section.proposito .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.proposito .card p {
+  color: var(--dark);
+}
+
+/* Módulos e Processos */
+section.title-modulos {
+  background-image: url("../../images/bg-modulos-left1.png"), url("../../images/bg-modulos-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title-modulos .card {
+  display: flex;
+  justify-content: center;
+  padding: 10px 32px;
+  min-height: 175px;
+}
+
+section.title-modulos .card.x2 {
+  margin-right: 250px;
+  padding: 10px 40px;
+}
+
+section.title-modulos .card.x3 {
+  padding: 45px;
+  min-height: auto;
+  margin-top: 7px;
+  margin-right: 75px;
+}
+
+.search .form-control {
+  color: #9B9B9B !important;
+}
+
+.search input.form-control {
+  height: 50px;
+  min-width: 500px;
+  width: 100%;
+  border-radius: 28px;
+  padding-left: 50px;
+  border: 1px solid #C8C8C8;
+  color: #9B9B9B !important;
+  transition: transform 0.3s ease;
+}
+
+.search input.form-control::placeholder {
+  color: #9B9B9B !important;
+}
+
+.search img {
+  left: 20px;
+  top: 15px;
+  z-index: 99;
+}
+
+section.suite a.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 156px;
+  color: #fff;
+  background-color: #9B9B9B;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+section.suite a.nav:hover {
+  background: var(--bg-roxo);
+}
+
+section.processso {
+  background-color: var(--white);
+}
+
+section.rh {
+  background-image: url("../../images/bg-modulos-left2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+section.rh .card {
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+  min-height: 490px;
+}
+
+section.categoria .nav-link {
+  font-weight: bold;
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+section.categoria .nav-link:hover {
+  text-decoration: none;
+}
+
+section.categoria .card {
+  padding: 30px;
+  min-height: 375px;
+  transition: all 0.3s;
+}
+
+section.categoria .card:hover .bg-categoria {
+  box-shadow: 0 0 0 5px rgba(200, 32, 223, 0.2);
+  transition: all 0.3s;
+}
+
+section.categoria .card h5 {
+  color: var(--purple);
+  font-size: 14px;
+}
+
+section.categoria .card .btn.btn-link-purple {
+  border-bottom: 0;
+  width: 35px;
+  position: absolute;
+  bottom: 16px;
+}
+
+section.categoria .card .bg-categoria {
+  width: 48px;
+  height: 48px;
+  background-color: var(--purple);
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 200;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+/* Integrações */
+section.title-integracoes {
+  background-image: url("../../images/bg-integracoes-left1.png"), url("../../images/bg-integracoes-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title-integracoes .mt-140 {
+  margin-top: 140px;
+}
+
+section.cloud4u {
+  background-image: url("../../images/bg-integracoes-left2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px;
+}
+
+section.cloud4u .card {
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  padding: 0px 50px;
+  min-height: 230px;
+}
+
+section.cloud4u h2.st {
+  color: var(--secondary);
+  font-weight: normal;
+  line-height: 45px;
+}
+
+section.ganhos {
+  background-image: url("../../images/bg-integracoes-left3.png"), url("../../images/bg-integracoes-right3.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.ganhos .card {
+  display: flex;
+  justify-content: center;
+  padding: 0px 60px;
+  min-height: 555px;
+}
+
+section.ganhos .bg-icone {
+  width: 115px;
+  height: 115px;
+  padding: 16px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80px;
+  background: #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+section.ganhos .hover:hover .bg-icone {
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(161, 161, 161, 0.4);
+  transition: all 0.3s;
+}
+
+section.ganhos hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(to right, #161E2E, var(--purple));
+}
+
+section.perfeitas {
+  background-image: url("../../images/bg-integracoes-left4.png"), url("../../images/bg-integracoes-right4.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.perfeitas .card {
+  display: flex;
+  justify-content: center;
+  padding: 20px 60px;
+  min-height: 218px;
+}
+
+section.perfeitas .card.left {
+  margin-left: 105px;
+}
+
+section.perfeitas.two {
+  background-image: url("../../images/bg-integracoes-left5.png"), url("../../images/bg-integracoes-right5.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.perfeitas.two .card.margin {
+  margin: 0 190px 0 160px;
+}
+
+section.parceiros .card-hover {
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 70px;
+  transition: all 0.3s;
+}
+
+section.parceiros .card-hover:hover {
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(109, 0, 83, 0.2);
+  transition: all 0.3s;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+section.parceiros .card-hover p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section.parceiros .card-hover h5 {
+  color: var(--purple);
+  font-size: 16px;
+}
+
+section.contato2 {
+  background-image: url("../../images/bg-contato-right.png"), url("../../images/bg-contato-left.png");
+  background-repeat: no-repeat;
+  background-position: left 60px, right 60px;
+}
+
+section.contato2 .card {
+  padding: 10px 80px;
+  background: #E3E3E3;
+}
+
+section.contato2 .card p {
+  color: var(--dark);
+}
+
+/* Implantação */
+section.title-implantacao {
+  background-image: url("../../images/bg-implantacao-left1.png"), url("../../images/bg-implantacao-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.projeto {
+  background-image: url("../../images/bg-implantacao-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: right 80px;
+}
+
+section.projeto .card {
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px 10px 150px;
+  min-height: 218px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+section.projeto .card.two {
+  min-height: 272px;
+}
+
+section.budget {
+  background-image: url("../../images/bg-implantacao-left3.png"), url("../../images/bg-implantacao-right3.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.budget .card {
+  display: flex;
+  justify-content: center;
+  padding: 10px 40px;
+  min-height: 300px;
+  margin-right: 140px;
+}
+
+section.consultoria {
+  background-image: url("../../images/bg-implantacao-right4.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+section.consultoria h2.st {
+  color: var(--secondary);
+  font-weight: normal;
+  line-height: 45px;
+  max-width: 450px;
+}
+
+section.simulador2 {
+  background-image: url("../../images/bg-implantacao-left5.png"), url("../../images/bg-implantacao-right5.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.simulador2 .w-simulador {
+  width: 100%;
+
+  max-width: 785px;
+  margin: auto;
+}
+
+section.simulador2 .card {
+  background-color: var(--gray);
+}
+
+/* Suporte */
+section.title-suporte {
+  background-image: url("../../images/bg-suporte-left1.png"), url("../../images/bg-suporte-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title-suporte .mt-140 {
+  margin-top: 140px;
+}
+
+section.prioridade .card {
+  display: flex;
+  justify-content: center;
+  padding: 20px 60px;
+  min-height: 537px;
+}
+
+section.prioridade .card.two {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-right: 200px;
+  min-height: 240px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+section.manutencao {
+  background-image: url("../../images/bg-suporte-left2.png"), url("../../images/bg-suporte-right2.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.manutencao .card {
+  display: flex;
+  justify-content: center;
+  padding: 20px 136px;
+  min-height: 218px;
+  margin-right: 440px;
+}
+
+section.atendimento .card {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  min-height: 252px;
+  transition: all 0.3s;
+}
+
+section.atendimento .card:hover {
+  margin-top: -3px;
+  box-shadow: 0 0.7rem 1.125rem -0.5rem rgba(155, 0, 119, 0.3);
+  transition: all 0.3s;
+}
+
+section.atendimento .card h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+section.atendimento .card img {
+  margin: 0 auto 30px;
+}
+
+section.line .card {
+  display: flex;
+  justify-content: center;
+  padding: 0 70px;
+  min-height: 250px;
+  border-radius: 0 40px 40px 0;
+  cursor: grab;
+  transition: all 0.3s;
+}
+
+section.line .card:hover {
+  box-shadow: 0 0 0 2px rgba(196, 71, 166, 0.1);
+  transition: all 0.3s;
+}
+
+section.line .card:active {
+  cursor: grabbing;
+}
+
+section.line .line-time .card.temp {
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.line-time {
+  display: flex;
+  overflow-x: auto;
+}
+
+.line-time::-webkit-scrollbar {
+  display: none;
+}
+
+.line-time>* {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+section.depoimento.suporte {
+  background-color: var(--white);
+}
+
+/* Tecnologia */
+section.title-tecnologia {
+  background-image: url("../../images/bg-tecnologia-left1.png"), url("../../images/bg-tecnologia-right1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title-tecnologia .card {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  min-height: 418px;
+}
+
+section.title-tecnologia .card img {
+  margin: auto;
+}
+
+section.unificado {
+  background-image: url("../../images/bg-tecnologia-left2.png"), url("../../images/bg-tecnologia-right2.png");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.unificado h2.mt {
+  font-weight: normal;
+  margin-top: 165px;
+  line-height: 40px;
+}
+
+section.unificado .card {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+  text-align: center;
+  padding: 20px;
+  min-height: 120px;
+}
+
+section.transformacao {
+  background-image: url("../../images/bg-tecnologia-left3.png"), url("../../images/bg-tecnologia-right3.png");
+  background-repeat: no-repeat;
+  background-position: left 80px, right 80px;
+}
+
+section.transformacao .card {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  min-height: 220px;
+}
+
+section.vantagens .card {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  min-height: 150px;
+  margin-left: 60px;
+  overflow: inherit;
+}
+
+section.vantagens .card .icon {
+  position: absolute;
+  left: -65px;
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: var(--purple);
+  text-align: center;
+  line-height: 100px;
+  transition: all 0.3s;
+}
+
+section.vantagens .card:hover .icon {
+  background-color: #b61590;
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(109, 0, 83, 0.7);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+section.sabermais .card {
+  display: flex;
+  justify-content: center;
+  padding: 30px 200px;
+  min-height: 300px;
+  overflow: inherit;
+}
+
+section.sabermais .card a {
+  display: block;
+  width: fit-content;
+}
+
+section.contato2.pt {
+  background-position: left 130px, right 130px;
+}
+
+/* Módulo Single */
+section.categoria.carrousel .card {
+  padding: 30px;
+  min-height: 445px;
+}
+
+section.categoria.carrousel .owl-carousel .owl-item img {
+  width: auto !important;
+}
+
+section.categoria.carrousel .card .btn.btn-link-purple {
+  width: 20px;
+  bottom: 20px;
+}
+
+/* Módulo Folha de Pagamento */
+section.suite.fp {
+  background-image: url("../../images/bg-modulo-left1.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+section.suite.fp .card {
+  display: flex;
+  justify-content: center;
+  padding: 10px 35px;
+  min-height: 235px;
+}
+
+section.ferramenta.fp {
+  background-image: url("../../images/bg-modulo-left2.png");
+  background-repeat: no-repeat;
+  background-position: left 80px;
+}
+
+section.ferramenta.fp .card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  min-height: 238px;
+  max-width: 618px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  left: 60px;
+  top: 40px;
+}
+
+section.ferramenta.fp img {
+  margin-top: -30px;
+}
+
+section.ferramenta.fp .card.two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+  min-height: 291px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  left: 20px;
+  top: 26px;
+}
+
 /* Media */
+@media (max-width: 980px) {
+  section.title-cloud .card {
+    padding: 30px;
+    margin-right: 0;
+  }
+
+  section.title-modulos .card.x2,
+  section.title-modulos .card.x3 {
+    margin-right: 0;
+  }
+
+  .search input.form-control {
+    min-width: auto;
+  }
+}
+
 @media (max-width: 450px) {
-  section.banner {
+
+  section.banner,
+  section.cards,
+  section.solucoes,
+  section.title-cloud,
+  section.title-modulos,
+  section.contato2,
+  section.agende,
+  section.rh,
+  section.title-integracoes,
+  section.cloud4u,
+  section.ganhos,
+  section.perfeitas,
+  section.perfeitas.two,
+  section.title-implantacao,
+  section.projeto,
+  section.budget,
+  section.consultoria,
+  section.simulador2,
+  section.manutencao,
+  section.title-suporte,
+  section.title-tecnologia,
+  section.unificado,
+  section.transformacao,
+  section.suite.fp,
+  section.ferramenta.fp {
     background-image: none;
   }
+
+  section.banner .btn.p-x2 {
+    padding: 0 50px;
+  }
+
+  .btn.p-x2 {
+    padding: 0 90px;
+  }
+
   section.ferramentas .card {
     padding: 30px;
   }
-  section.cards {
-    background-image: none;
-  }
+
   section.integracao .card {
     padding: 30px;
   }
+
   section.time .card {
     padding: 30px;
     height: auto;
   }
-  section.solucoes {
-    background-image: none;
-  }
-  section.contato .card {
+
+  section.contato .card,
+  section.agende .card,
+  section.contato2 .card {
     padding: 20px;
   }
+
+  section.agende .card img {
+    width: 100%;
+  }
+
   section.biometria .owl-carousel .owl-item img {
     margin: auto;
+  }
+
+  section.proposito .card {
+    padding: 20px;
+  }
+
+  section.title-integracoes .mt-140 {
+    margin-top: 10px;
+  }
+
+  section.cloud4u h2.st {
+    line-height: 35px;
+    font-size: 20px;
+    margin-right: 30px;
+  }
+
+  section.ganhos .card {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  section.perfeitas .card.left {
+    margin-left: 0;
+  }
+
+  section.perfeitas.two .card.margin {
+    margin: 0;
+  }
+
+  section.parceiros .card-hover {
+    padding: 30px;
+  }
+
+  section.projeto .card {
+    padding: 10px 50px 10px 30px;
+  }
+
+  section.budget .card {
+    padding: 20px;
+    margin-right: 0;
+  }
+
+  section.line .card {
+    padding: 30px;
+    min-height: 100px;
+  }
+
+  section.line .line-time .card.temp {
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  section.manutencao .card {
+    padding: 20px;
+    min-height: 218px;
+    margin-right: 0;
+  }
+
+  section.prioridade .card.two,
+  section.transformacao .card,
+  section.sabermais .card {
+    padding: 30px;
+  }
+
+  section.title-suporte .mt-140,
+  section.unificado h2.mt {
+    margin-top: 0;
+  }
+
+  section.prioridade .card {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  section.title-tecnologia .card {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  section.ferramenta.fp .card {
+    position: relative;
+    left: 0;
+    top: 0px;
+  }
+
+  section.ferramenta.fp img {
+    margin-top: 20px;
+  }
+
+  section.ferramenta.fp .card.two {
+    left: 0;
   }
 }

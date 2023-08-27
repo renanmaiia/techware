@@ -1,19 +1,26 @@
 section.banner {
   background-image: url("../../images/bg-cases-home-left.png"), url("../../images/bg-cases-home-right.png");
-  background-color: #F1F1F1;
+  background-color: var(--cinza-claro);
   background-repeat: no-repeat;
   background-position: left 50px, right 50px;
 }
 
 section.banner .card {
-  max-width: 400px;
-  padding: 40px 50px;
   margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px;
+  min-height: 218px;
+  margin-right: 40px;
 }
 
 section.banner .card.x2 {
-  padding: 20px;
-  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  min-height: 143px;
+  margin-right: 40px;
+  margin-top: 35px;
 }
 
 section.banner .card h3 {
@@ -29,13 +36,24 @@ section.clientes {
 }
 
 section.clientes .card {
+  display: flex;
+  justify-content: center;
   background-color: var(--gray);
-  padding: 53px 80px;
-  margin-left: 10px;
+  padding: 10px 40px;
+  min-height: 218px;
+  margin: 0 250px 0 10px;
 }
 
 section.clientes .card.x1 {
-  padding: 28px 150px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+  padding: 10px 80px;
+  min-height: 127px;
+  margin-left: 145px;
+  margin-right: 297px;
+  margin-top: 7px;
+  margin: 7px 297px 0 145px;
 }
 
 section.clientes .owl-carousel .owl-item img {
@@ -49,11 +67,12 @@ section.cards .card-hover {
   padding: 25px 70px;
   transition: all 0.3s;
 }
+
 section.cards .card-hover:hover {
   box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(109, 0, 83, 0.2);
   transition: all 0.3s;
-  margin-top:-5px;
-  margin-bottom:5px;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 section.cards .card-hover p {
@@ -101,36 +120,44 @@ section.contato .card p {
     padding: 40px;
     margin-top: 30px;
   }
+
+  section.banner,
   section.clientes {
     background-image: none;
   }
 }
+
 @media (max-width: 450px) {
   section.simulador .card {
     padding: 30px;
   }
+
   section.clientes .altura {
     padding: 30px 0;
   }
+
   section.cards .card-hover {
     padding: 30px;
   }
-  section.clientes .card {
-    padding: 20px;
-    margin-left: 0;
-  }
+
+  section.clientes .card,
   section.clientes .card.x1 {
-    padding: 28px;
+    padding: 20px;
+    margin: 0;
   }
+
   section.premios .altura {
     padding: 20px;
   }
+
   section.contato {
     background-image: none;
   }
+
   section.contato .card {
     padding: 10px;
   }
+
   section.contato .card img {
     width: 100%;
   }

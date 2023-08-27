@@ -1,0 +1,60 @@
+section.title {
+  background-image: url("../../images/bg-left-agendar1.png"), url("../../images/bg-right-agendar1.png");
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}
+
+section.title .card {
+  display: flex;
+  justify-content: center;
+  padding: 39px;
+  margin-right: 15px;
+  min-height: 220px;
+}
+
+section.title .card.right {
+  margin-right: 100px;
+  min-height: 150px;
+}
+
+section.horarios .card {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  min-height: 278px;
+}
+
+section.horarios .badge {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--purple);
+  border-radius: 40px;
+  padding: 14px;
+}
+
+/* Media */
+@media (max-width: 450px) {
+  .container-tech {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  section.horarios,
+  section.title {
+    background-image: none;
+  }
+
+  section.title .card {
+    margin-right: 0;
+  }
+
+  section.title .card.right {
+    margin-right: 0;
+  }
+
+  section.grafico .card,
+  section.orcamento .card {
+    padding: 30px;
+  }
+}

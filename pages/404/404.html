@@ -34,6 +34,11 @@
       <div class="container-fluid">
         <div class="d-md-flex justify-content-end">
           <ul class="nav mr-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:void(0)" onclick="changeDarkMode()">
+                <img class="mx-2" src="../../images/sun.svg" />
+              </a>
+            </li>
             <li class="nav-item d-flex align-items-center border-left border-right">
               <a class="nav-link py-0 d-flex align-items-center pr-0" onclick="changeFontSize(-2)"
                 href="javascript:void(0)">
@@ -53,12 +58,17 @@
                 <img src="../../images/icon-user.svg" class="mr-2"> Já Sou Cliente
               </a>
             </li>
+            <li class="nav-item d-flex align-items-center pr-0">
+              <a href="../agendar/agendar.html" class="btn btn-dark btn-sm">
+                Agende uma apresentação
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- Menu -->
-    <div class="navbar navbar-expand-lg border-bottom">
+    <div class="navbar navbar-expand-lg">
       <nav class="container-fluid">
         <a class="navbar-brand" href="../home/home.html">
           <img src="../../images/logo-techware.svg">
@@ -84,22 +94,13 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../home/home.html">Home</a>
+              <a class="nav-link" href="../rhevolution/modulos.html">Soluções</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../cases/cases.html">Cases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../bpo/bpo.html">BPO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
+              <a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o Potencial de Retorno</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pr-3" href="../blog/blog.html">Blog</a>
@@ -160,27 +161,43 @@
         </div>
       </div>
       <div class="row">
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../cases/cases.html">Cases</a></h5>
-          <!-- <ul class="nav flex-column text-primary-hover">
+        <div class="col col-lg mb-4">
+          <h5>Sobre</h5>
+          <ul class="nav flex-column text-primary-hover">
             <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">A Techware</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Premios e Certificações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Big Numbers</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Manifesto</a></li>
             <li class="nav-item"><a class="nav-link" href="../cases/cases.html">Cases de Sucesso</a></li>
-          </ul> -->
+            <li class="nav-item"><a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o
+                Potencial de Retorno</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../rhevolution/rhevolution.html">Rhevolution</a></h5>
+        <div class="col col-lg mb-4">
+          <h5>RH de Ponta a Ponta</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/integracoes.html">Integrações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/implantacao.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/suporte.html">Suporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../bpo/bpo.html">BPO</a></h5>
+
+        <div class="col col-lg mb-4">
+          <h5>Tercerização da Folha</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../bpo/bpo.html">BPO</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/consultoria.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../ad/ad.html">Admissão Digital</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../contato/contato.html">Contato</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../blog/blog.html">Blog</a></h5>
+        <div class="col col-lg mb-4">
+          <a href="../ad/ad.html">
+            <h5>Admissão Digital</h5>
+          </a>
         </div>
       </div>
       <hr>
@@ -197,12 +214,26 @@
       <hr>
       <div class="d-sm-flex align-items-center justify-content-between mt-5">
         <ul class="list-inline mb-0">
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.facebook.com/techwaresystems" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-instagram"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.instagram.com/techwareoficial/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-youtube"></i></a> </li>
-          <li class="list-inline-item"> <a class="rede-social" href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.youtube.com/user/techwaresystems" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="rede-social" href="https://www.linkedin.com/company/techware-systems/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
         </ul>
         <span>
           <ul class="nav text-primary-hover align-items-center">

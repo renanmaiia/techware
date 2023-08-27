@@ -34,6 +34,11 @@
       <div class="container-fluid">
         <div class="d-md-flex justify-content-end">
           <ul class="nav mr-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:void(0)" onclick="changeDarkMode()">
+                <img class="mx-2" src="../../images/sun.svg" />
+              </a>
+            </li>
             <li class="nav-item d-flex align-items-center border-left border-right">
               <a class="nav-link py-0 d-flex align-items-center pr-0" onclick="changeFontSize(-2)"
                 href="javascript:void(0)">
@@ -53,12 +58,17 @@
                 <img src="../../images/icon-user.svg" class="mr-2"> Já Sou Cliente
               </a>
             </li>
+            <li class="nav-item d-flex align-items-center pr-0">
+              <a href="../agendar/agendar.html" class="btn btn-dark btn-sm">
+                Agende uma apresentação
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- Menu -->
-    <div class="navbar navbar-expand-lg border-bottom">
+    <div class="navbar navbar-expand-lg">
       <nav class="container-fluid">
         <a class="navbar-brand" href="../home/home.html">
           <img src="../../images/logo-techware.svg">
@@ -84,22 +94,13 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../home/home.html">Home</a>
+              <a class="nav-link" href="../rhevolution/modulos.html">Soluções</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../cases/cases.html">Cases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../bpo/bpo.html">BPO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
+              <a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o Potencial de Retorno</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pr-3" href="../blog/blog.html">Blog</a>
@@ -121,29 +122,81 @@
   </section>
   <!-- Section -->
   <section class="sitemap">
-    <div class="container">
-      <div class="row my-sm-5">
-        <div class="col mb-3 pr-lg-4">
-          <div class="d-sm-flex align-items-center justify-content-lg-center">
-            <div class="border-right pr-md-5">
-              <nav class="nav flex-column pr-md-5">
-                <a class="nav-link" href="../home/home.html">Home</a>
-                <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
-                <a class="nav-link" href="../cases/cases.html">Cases</a>
-                <a class="nav-link" href="../contato/contato.html">Contato</a>
-                <a class="nav-link" href="../orcamento/orcamento.html">Solicite um Orçamento</a>
-              </nav>
-            </div>
-            <div class="pl-md-5">
-              <nav class="nav flex-column pl-md-5">
-                <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
-                <a class="nav-link" href="../bpo/bpo.html">BPO</a>
-                <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
-                <a class="nav-link" href="../blog/blog.html">Blog</a>
-                <a class="nav-link" href="../privacidade/privacidade.html">Política de Privacidade</a>
-              </nav>
-            </div>
-          </div>
+    <div class="container-tech">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h4>Conheça a Techware</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="../sobre/sobre.html">Sobre</a> </li>
+            <li> <a href="../cases/cases.html">Cases</a> </li>
+            <li> <a href="../potencial-retorno/potencial-retorno.html">Calcule potencial de Retorno</a> </li>
+          </ul>
+          <h4>Entre em contato</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="../contato/contato.html">Contato</a> </li>
+            <li> <a href="../cases/cases.html">Fale Conosco</a> </li>
+            <li> <a href="../orcamento/orcamento.html">Solicite um orçamento</a> </li>
+            <li> <a href="../agendar/agendar.html">Agende uma demonstração</a> </li>
+          </ul>
+          <h4>Blog</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+            <li> <a href="#">Categoria</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h4>RH de ponta a ponta</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="../rhevolution/rhevolution.html">RHevolution</a> </li>
+            <li> <a href="../rhevolution/cloud-plus.html">Cloud+</a> </li>
+            <li> <a href="../rhevolution/modulos.html">Módulos e Processos</a> </li>
+            <li> <a href="../rhevolution/integracoes.html">Integrações</a> </li>
+            <li> <a href="../rhevolution/implantacao.html">Consultoria</a> </li>
+            <li> <a href="../rhevolution/suporte.html">Suporte</a> </li>
+            <li> <a href="../rhevolution/tecnologia.html">Tecnologia</a> </li>
+          </ul>
+          <h4>Terceirização de Folha</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="../bpo/bpo.html">BPO</a> </li>
+            <li> <a href="../bpo/modulos.html">Módulos e Processos</a> </li>
+            <li> <a href="../bpo/consultoria.html">Consultoria</a> </li>
+            <li> <a href="../bpo/tecnologia.html">Tecnologia</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h4>Nossa suíte</h4>
+          <ul class="list-unstyled mb-5">
+            <li> <a href="../rhevolution/modulo-folha-pagamento.html">Folha de Pagamento</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Cargos e Salários</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Timekeeper</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Banco de Horas</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Gestão de Benefícios</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">eSocial Engine e Mensageria</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Previdência Privada</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Gestão de Terceiros</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Alert</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Portal do RH</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Mobile</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Gestão de Competências</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Gestão de Desempenho</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Treinamento e Desenvolvimento</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Programa de Participação de Resultados</a> </li>
+            <li> <a href="../ad/ad.html">Admissão Digital</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Recrutamento e Seleção</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Planejamento e Orçamento de Pessoal</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Indicadores de RH</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Gerador de Relatórios</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Engine de Integração</a> </li>
+            <li> <a href="../rhevolution/modulo-single.html">Saúde e Segurança Ocupacional</a> </li>
+          </ul>
         </div>
       </div>
       <div class="row text-sm-center mb-5 mt-4">
@@ -184,27 +237,43 @@
         </div>
       </div>
       <div class="row">
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../cases/cases.html">Cases</a></h5>
-          <!-- <ul class="nav flex-column text-primary-hover">
+        <div class="col col-lg mb-4">
+          <h5>Sobre</h5>
+          <ul class="nav flex-column text-primary-hover">
             <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">A Techware</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Premios e Certificações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Big Numbers</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Manifesto</a></li>
             <li class="nav-item"><a class="nav-link" href="../cases/cases.html">Cases de Sucesso</a></li>
-          </ul> -->
+            <li class="nav-item"><a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o
+                Potencial de Retorno</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../rhevolution/rhevolution.html">Rhevolution</a></h5>
+        <div class="col col-lg mb-4">
+          <h5>RH de Ponta a Ponta</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/integracoes.html">Integrações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/implantacao.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/suporte.html">Suporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../bpo/bpo.html">BPO</a></h5>
+
+        <div class="col col-lg mb-4">
+          <h5>Tercerização da Folha</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../bpo/bpo.html">BPO</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/consultoria.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../ad/ad.html">Admissão Digital</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../contato/contato.html">Contato</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../blog/blog.html">Blog</a></h5>
+        <div class="col col-lg mb-4">
+          <a href="../ad/ad.html">
+            <h5>Admissão Digital</h5>
+          </a>
         </div>
       </div>
       <hr>
@@ -221,14 +290,27 @@
       <hr>
       <div class="d-sm-flex align-items-center justify-content-between mt-5">
         <ul class="list-inline mb-0">
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.facebook.com/techwaresystems" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-instagram"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.instagram.com/techwareoficial/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-youtube"></i></a> </li>
-          <li class="list-inline-item"> <a class="rede-social" href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.youtube.com/user/techwaresystems" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="rede-social" href="https://www.linkedin.com/company/techware-systems/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
         </ul>
-
         <span>
           <ul class="nav text-primary-hover align-items-center">
             <li class="nav-item"><a class="nav-link mr-4" href="../privacidade/privacidade.html">Politicas

@@ -34,6 +34,11 @@
       <div class="container-fluid">
         <div class="d-md-flex justify-content-end">
           <ul class="nav mr-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a href="javascript:void(0)" onclick="changeDarkMode()">
+                <img class="mx-2" src="../../images/sun.svg" />
+              </a>
+            </li>
             <li class="nav-item d-flex align-items-center border-left border-right">
               <a class="nav-link py-0 d-flex align-items-center pr-0" onclick="changeFontSize(-2)"
                 href="javascript:void(0)">
@@ -53,12 +58,17 @@
                 <img src="../../images/icon-user.svg" class="mr-2"> Já Sou Cliente
               </a>
             </li>
+            <li class="nav-item d-flex align-items-center pr-0">
+              <a href="../agendar/agendar.html" class="btn btn-dark btn-sm">
+                Agende uma apresentação
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- Menu -->
-    <div class="navbar navbar-expand-lg border-bottom">
+    <div class="navbar navbar-expand-lg">
       <nav class="container-fluid">
         <a class="navbar-brand" href="../home/home.html">
           <img src="../../images/logo-techware.svg">
@@ -84,22 +94,13 @@
         <div class="navbar-collapse collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="../home/home.html">Home</a>
+              <a class="nav-link" href="../rhevolution/modulos.html">Soluções</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../sobre/sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../cases/cases.html">Cases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../bpo/bpo.html">BPO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../ad/ad.html">Admissão Digital</a>
+              <a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o Potencial de Retorno</a>
             </li>
             <li class="nav-item">
               <a class="nav-link pr-3" href="../blog/blog.html">Blog</a>
@@ -110,24 +111,29 @@
     </div>
   </header>
   <!-- Banner -->
-  <section class="banner pt-0 pb-5">
+  <section class="banner pt-5 pb-5">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-lg-4 d-flex flex-column">
-          <img src="../../images/image-banner-home.png" class="img-fluid">
-        </div>
-        <div class="col-lg-8 mt-5">
-          <div class="card mb-4">
-            <p class="text-uppercase mb-1">TECNOLOGIA para Recursos Humanos</p>
-            <h2 class="mb-0">A verdadeira experiência do colaborador começa aqui!</h2>
+        <div class="col img">
+          <div class="d-lg-flex">
+            <img src="../../images/image-banner-home.png" class="img-fluid mr-lg-4 h-100 mb-3"
+              style="margin-top:-50px;">
+            <div class="flex-column">
+              <div class="card mb-4">
+                <p class="text-uppercase mb-1">TECNOLOGIA para Recursos Humanos</p>
+                <h2 class="mb-0">A verdadeira experiência do colaborador começa aqui!</h2>
+              </div>
+              <div class="card2 px-lg-5 mb-4">
+                <h3 class="mb-1">Tecnologia e serviços que constroem a base do seu RH e elevam a experiência do pessoal
+                  no
+                  trabalho. </h3>
+                <p class="mb-0">Conheça as soluções de Cloud e BPO de Folha Techware.</p>
+              </div>
+              <a href="../bpo/bpo.html" class="btn btn-outline-purple mr-4 mb-3"> Conhecer o BPO de Folha </a>
+              <a href="../rhevolution/rhevolution.html" class="btn btn-purple mb-3"> Conhecer o software Rhevolution
+              </a>
+            </div>
           </div>
-          <div class="card x2 px-lg-5 mb-4">
-            <h3 class="mb-1">Tecnologia e serviços que constroem a base do seu RH e elevam a experiência do pessoal no
-              trabalho. </h3>
-            <p class="mb-0">Conheça as soluções de Cloud e BPO de Folha Techware.</p>
-          </div>
-          <a href="../bpo/bpo.html" class="btn btn-outline-purple mr-4 mb-3"> Conhecer o BPO de Folha </a>
-          <a href="../rhevolution/rhevolution.html" class="btn btn-purple mb-3"> Conhecer o software Rhevolution </a>
         </div>
       </div>
     </div>
@@ -235,42 +241,42 @@
   </section>
   <!-- Section -->
   <section class="pt-0">
-    <div class="container-fluid">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 mb-3 px-md-5">
-          <h2 class="pr-md-5">Construa uma base confiável para o seu RH e voe com Techware.</h2>
-          <p class="pr-md-5">
+    <div class="container-tech">
+      <div class="row align-items-center flex-lg-row-reverse justify-content-center mb-5">
+        <div class="col-lg-6 pr-lg-5 order-1">
+          <h2>Construa uma base confiável para o seu RH e voe com Techware.</h2>
+          <p class="mb-0">
             Tudo o que você precisa, de forma unificada e funcionando perfeitamente para o máximo desempenho de suas
             pessoas. <strong>Esta é a Techware!</strong>
           </p>
         </div>
-        <div class="col-md-6 pr-md-5">
-          <img src="../../images/image-home6.png" class="w-100">
+        <div class="col-lg-6 mb-3 text-right">
+          <img src="../../images/image-home6.png" class="img-fluid">
         </div>
       </div>
-      <div class="row align-items-center mb-5">
-        <div class="col-md-7 mb-3">
-          <img src="../../images/image-home7.png" class="w-100">
+      <div class="row align-items-center mt-5 mb-5">
+        <div class="col-lg-6 mb-3">
+          <img src="../../images/image-home7.png" class="img-fluid">
         </div>
-        <div class="col-md-5 px-md-5">
-          <p class="pl-md-5" style="font-size: 20px;">
+        <div class="col-lg-5 pl-lg-5">
+          <p class="mb-0" style="font-size: 20px;">
             De remuneração, com o melhor Cloud ou BPO de folha de pagamento do mercado, à gestão estratégica de RH, as
             soluções da Techware levam mobilidade, <strong>criptografia de ponta a ponta e a melhor experiência do
               colaborador em toda a sua jornada profissional. </strong>
           </p>
         </div>
       </div>
-      <div class="row align-items-center">
-        <div class="col-md-5 px-md-5 mb-3">
-          <p class="pr-md-5" style="font-size: 20px;">
+      <div class="row align-items-center flex-lg-row-reverse justify-content-center mt-5">
+        <div class="col-lg-6 pr-lg-5 order-1">
+          <p class="mb-0" style="font-size: 20px;">
             Se você deseja aumentar a performance de seus times, transformar digitalmente as relações de trabalho de
             suas
             pessoas com segurança e acuracidade e ainda fazer a gestão completa e moderna de RH, <strong>a Techware tem
               uma solução única para ajudar você a construir hoje o futuro que planejou.</strong>
           </p>
         </div>
-        <div class="col-md-7">
-          <img src="../../images/image-home8.png" class="w-100">
+        <div class="col-lg-6 mb-3 text-right">
+          <img src="../../images/image-home8.png" class="img-fluid">
         </div>
       </div>
     </div>
@@ -287,8 +293,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="../../images/image-animation.png" class="w-100">
+        <div class="col text-center">
+          <a href="../rhevolution/modulos.html">
+            <img src="../../images/image-animation.png" class="img-fluid">
+          </a>
         </div>
       </div>
     </div>
@@ -518,26 +526,56 @@
       </div>
     </div>
   </section>
-  <!-- Section 
-  <section class="simulador">
-    <div class="container-fluid">
+  <!-- Section -->
+  <section class="simulador overflow-hidden">
+    <div class="container-fluid pr-lg-0">
       <div class="row mb-5">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <div class="card">
             <p class="text-uppercase">Simulação do potencial de retorno</p>
             <h2 class="mb-0"> Teste o potencial de retorno de nossas soluções. </h2>
           </div>
         </div>
+        <div class="col-lg-5">
+          <img src="../../images/image-home-004.png" class="img-fluid position-absolute end-0" style="top: -35px;">
+        </div>
       </div>
       <div class="row pl-lg-5">
         <div class="col-lg-8 pl-lg-5">
-          <a class="btn btn-purple mb-4" href="#"> Quero simular </a>
-          <div class="card p-5">
+          <a class="btn btn-purple btn-sm px-5 mb-3 ml-lg-4" href="../potencial-retorno/potencial-retorno.html">
+            Quero simular
+          </a>
+          <div class="card two p-5 ml-lg-4">
             <p class="mb-0">
               Com o Rhevolution, o seu negócio aumentará a performance e alcançará novos patamares na gestão de RH. Ele
               pode ser implantado de forma independente ou integrado aos maiores ERPs do mercado. Faça o teste do
               possível retorno e troque sua solução atual pela Techware.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section -->
+  <section class="agende">
+    <div class="container-tech">
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="card">
+            <div class="d-lg-flex justify-content-center align-items-center">
+              <div class="d-flex mr-lg-5">
+                <img src="../../images/image-agende01.png">
+              </div>
+              <div class="flex-column p-4">
+                <p class="mb-4">
+                  Veja na prática como a Techware pode melhorar a<br> experiência da gestão de folha e RH.
+                </p>
+                <h2 class="mb-3">Veja uma demonstração.</h2>
+                <a href="../agendar/agendar.html" class="btn btn-purple btn-sm px-5">
+                  Agende um horário
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -619,7 +657,7 @@
       </div>
     </div>
   </section>
-  <!-- Section 
+  <!-- Section -->
   <section class="blog">
     <div class="container-fluid">
       <div class="row">
@@ -627,7 +665,7 @@
           <h2 class="mb-3 mr-5">
             Leia o blog da Techware
           </h2>
-          <a class="btn btn-purple mb-3" href="#"> Quero simular </a>
+          <a class="btn btn-purple btn-sm px-5 mb-3" href="../blog/blog.html"> Ver todos os artigos </a>
         </div>
       </div>
       <div class="row justify-content-between">
@@ -712,7 +750,7 @@
       </div>
     </div>
   </section>
-   <!-- Footer -->
+  <!-- Footer -->
   <footer>
     <div class="container-fluid">
       <div class="row newsletter justify-content-between align-items-center mb-5">
@@ -743,27 +781,43 @@
         </div>
       </div>
       <div class="row">
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../cases/cases.html">Cases</a></h5>
-          <!-- <ul class="nav flex-column text-primary-hover">
+        <div class="col col-lg mb-4">
+          <h5>Sobre</h5>
+          <ul class="nav flex-column text-primary-hover">
             <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">A Techware</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Premios e Certificações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Big Numbers</a></li>
+            <li class="nav-item"><a class="nav-link" href="../sobre/sobre.html">Manifesto</a></li>
             <li class="nav-item"><a class="nav-link" href="../cases/cases.html">Cases de Sucesso</a></li>
-          </ul> -->
+            <li class="nav-item"><a class="nav-link" href="../potencial-retorno/potencial-retorno.html">Calcule o
+                Potencial de Retorno</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../rhevolution/rhevolution.html">Rhevolution</a></h5>
+        <div class="col col-lg mb-4">
+          <h5>RH de Ponta a Ponta</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/rhevolution.html">Rhevolution</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/integracoes.html">Integrações</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/implantacao.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/suporte.html">Suporte</a></li>
+            <li class="nav-item"><a class="nav-link" href="../rhevolution/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../bpo/bpo.html">BPO</a></h5>
+
+        <div class="col col-lg mb-4">
+          <h5>Tercerização da Folha</h5>
+          <ul class="nav flex-column text-primary-hover">
+            <li class="nav-item"><a class="nav-link" href="../bpo/bpo.html">BPO</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/modulos.html">Módulos e Processos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/consultoria.html">Consultoria</a></li>
+            <li class="nav-item"><a class="nav-link" href="../bpo/tecnologia.html">Tecnologia</a></li>
+          </ul>
         </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../ad/ad.html">Admissão Digital</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../contato/contato.html">Contato</a></h5>
-        </div>
-        <div class="col col-lg text-center mb-4">
-          <h5><a href="../blog/blog.html">Blog</a></h5>
+        <div class="col col-lg mb-4">
+          <a href="../ad/ad.html">
+            <h5>Admissão Digital</h5>
+          </a>
         </div>
       </div>
       <hr>
@@ -780,14 +834,27 @@
       <hr>
       <div class="d-sm-flex align-items-center justify-content-between mt-5">
         <ul class="list-inline mb-0">
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.facebook.com/techwaresystems" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-instagram"></i></a>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.instagram.com/techwareoficial/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
           </li>
-          <li class="list-inline-item pr-2"> <a class="rede-social" href="#"><i class="fab fa-youtube"></i></a> </li>
-          <li class="list-inline-item"> <a class="rede-social" href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+          <li class="list-inline-item pr-2">
+            <a class="rede-social" href="https://www.youtube.com/user/techwaresystems" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="rede-social" href="https://www.linkedin.com/company/techware-systems/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
         </ul>
-
         <span>
           <ul class="nav text-primary-hover align-items-center">
             <li class="nav-item"><a class="nav-link mr-4" href="../privacidade/privacidade.html">Politicas
