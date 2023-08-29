@@ -27,6 +27,10 @@ section.orcamento .card {
   padding: 70px;
 }
 
+a {
+  white-space: nowrap;
+}
+
 /* Media */
 @media (max-width: 450px) {
   section.contato {
