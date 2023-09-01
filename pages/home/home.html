@@ -302,8 +302,8 @@
     </div>
   </section>
   <!-- Section -->
-  <section class="video">
-    <div class="container-fluid">
+  <section id="video-bar" class="video">
+    <div class="container-fluid container-2">
       <div class="row mb-5 px-md-5">
         <div class="col-md-8 pl-md-5">
           <p class="text-uppercase mb-1 pl-md-5" style="font-size: 12px;"><b>Sobre a Techware</b></p>
@@ -314,8 +314,13 @@
       </div>
       <div class="row ">
         <div class="col-md-7 mb-3 px-md-5">
-          <a href="#">
-            <img src="../../images/capa-video.png" class="img-fluid">
+          <iframe width="654" height="365" id="video"
+            src="https://www.youtube.com/embed/oUKnkUEkPFw?rel=0&amp;autoplay=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <a href="#video-bar" onclick="startVideo()">
+            <img src="../../images/capa-video.png" id="tumblr-video" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4 pl-md-5">
