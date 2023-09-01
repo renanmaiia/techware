@@ -56,6 +56,10 @@ section.solucoes .img {
   padding-left: 210px;
 }
 
+.contato a{
+  white-space: nowrap
+}
+
 /* Media */
 @media (max-width: 1300px) {
   section.cliente .card {

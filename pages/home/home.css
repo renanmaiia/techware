@@ -62,6 +62,11 @@ section.numeros .card h2 {
   color: var(--purple);
 }
 
+section iframe{
+  display: none;
+  border-radius: 28px;
+}
+
 section.clientes {
   background-color: var(--white);
 }
@@ -118,8 +123,32 @@ section.agende .card p {
   color: var(--dark);
 }
 
+.container-2{
+  padding-right: 70px !important;
+    padding-left: 233px !important;
+}
+
 /* Media */
-@media (max-width: 450px) {
+@media (max-width: 1700px) {
+  .container-2{
+    padding-right: 40px !important;
+    padding-left: 220px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container-2{
+    padding-right: 50px !important;
+    padding-left: 159px !important;
+  }
+}
+@media (max-width: 1363px) {
+  .container-2{
+    padding-right: 40px !important;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 1250px) {
   section.banner, section.simulador, section.agende {
     background-image: none;
   }

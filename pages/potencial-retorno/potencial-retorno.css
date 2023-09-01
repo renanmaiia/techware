@@ -65,8 +65,20 @@ section.simulacao .card.two {
 }
 
 .card.height {
-  min-height: 524px;
+  height: 581px;
 }
+
+
+.itens-inside{
+  height: 180px;
+  position: relative;
+}
+
+.itens-inside h6{
+  position: absolute;
+  bottom: 0;
+}
+
 
 /* Result */
 section.title {

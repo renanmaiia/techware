@@ -29,9 +29,21 @@ lineTime.addEventListener('mousemove', function (e) {
 // Carousel Depoimentos
 $('.testimonial').owlCarousel({
   items: 1,
-  loop:true,
-  margin:40,
-  nav:true,
-  dots:false,
+  loop: true,
+  margin: 40,
+  nav: true,
+  dots: false,
   navText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
 });
+
+function startVideo() {
+  document.getElementById('video').click()
+}
+
+function startVideo() {
+  document.getElementById('tumblr-video').style = 'display: none'
+  document.getElementById('video').style = 'display: block'
+  setTimeout(() => {
+    startVideo()
+  }, 1000);
+}
