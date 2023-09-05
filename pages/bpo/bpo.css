@@ -188,6 +188,10 @@ section.integracao .card {
   padding: 50px;
 }
 
+.categoria .card {
+  height: 500px;
+}
+
 section.integracao .card .largura {
   width: 100%;
   max-width: 355px;

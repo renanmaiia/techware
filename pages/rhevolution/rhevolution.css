@@ -480,7 +480,7 @@ section.categoria .nav-link:hover {
 
 section.categoria .card {
   padding: 30px;
-  min-height: 375px;
+  min-height: 490px;
   transition: all 0.3s;
 }
 
